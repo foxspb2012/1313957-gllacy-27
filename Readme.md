@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Евгений Потапов](https://up.htmlacademy.ru/htmlcss/27/user/1313957).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
