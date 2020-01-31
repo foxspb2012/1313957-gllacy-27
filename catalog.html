@@ -24,13 +24,56 @@
         <li><a href="#">Корзина</a></li>
       </ul>
     </header>
+
     <main>
+      <p>С 10 до 20, ежедневно</p>
+      <p>8 812 450-25-25</p>
+
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
+
       <h1>Сливочное мороженое</h1>
+      <section>
+        <h2>Фильтры по мороженому</h2>
+        <p>Сортировка:</p>
+        <select name="sort">
+          <option value="popularities">по поулярности</option>
+          <option value="price_up">по возрастанию цены</option>
+          <option value="price_down">по убыванию цены</option>
+        </select>
+
+        <label for="price_select">Цена: 100 руб.-500 руб.</label>
+        <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
+
+        <p>Жирность:</p>
+        <label for="0">
+          <input type="radio" id="0" name="fatness" value="0">
+          0%
+        </label>
+        <label for="less_10">
+          <input type="radio" id="less_10" name="fatness" value="less_10" checked>
+          до 10%
+        </label>
+        <label for="less_30">
+          <input type="radio" id="less_30" name="fatness" value="less_30">
+          до 30%
+        </label>
+        <label for="over_30">
+          <input type="radio" id="over_30" name="fatness" value="over_30">
+          выше 30%
+        </label>
+
+        <input type="checkbox" name="chocolate_filling" value="chocolate_filling">шоколадные
+        <input type="checkbox" name="sugar_powders" value="sugar_powders">сахарные присыпки
+        <input type="checkbox" name="fruits" value="fruits">фрукты
+        <input type="checkbox" name="syrups" value="syrups">сиропы
+        <input type="checkbox" name="jams" value="jams">джемы
+
+        <input type="submit" value="Применить">
+      </section>
 
       <section>
         <h2>Список сливочного мороженого</h2>
@@ -156,6 +199,17 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section>
+        <h2>Переключение страниц</h2>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="page_2.html"></a>2</li>
+          <li><a href="page_3.html"></a>3</li>
+          <li><a href="page_4.html"></a>4</li>
+          <li><a href="page_5.html"></a>5</li>
+        </ul>
+        <!--дополнить секцию переключателем страниц-->>
       </section>
     </main>
 
