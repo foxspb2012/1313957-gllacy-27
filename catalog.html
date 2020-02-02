@@ -36,37 +36,76 @@
       <h1>Сливочное мороженое</h1>
       <section>
         <h2>Фильтры по мороженому</h2>
-        <p>Сортировка:</p>
-        <select name="sort">
-          <option value="popularities">по поулярности</option>
-          <option value="price_up">по возрастанию цены</option>
-          <option value="price_down">по убыванию цены</option>
-        </select>
-        <label for="price_select">Цена: 100 руб.-500 руб.</label>
-        <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
-        <p>Жирность:</p>
-        <label for="0">0%</label>
-        <input type="radio" id="0" name="fatness" value="0">
-        <label for="less_10">до 10%</label>
-        <input type="radio" id="less_10" name="fatness" value="less_10" checked> 
-        <label for="less_30">до 30% </label>
-        <input type="radio" id="less_30" name="fatness" value="less_30"> 
-        <label for="over_30">выше 30%</label>
-        <input type="radio" id="over_30" name="fatness" value="over_30">  
-        <p>Наполнители:</p>
-        <label for="chocolate_filling">шоколадные</label>
-        <input type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling">
-        <label for="sugar_powders">сахарные присыпки</label>
-        <input type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders">
-        <label for="fruits">фрукты</label>
-        <input type="checkbox" id="fruits" name="fruits" value="fruits">
-        <label for="syrups">сиропы</label>
-        <input type="checkbox" id="syrups" name="syrups" value="syrups">
-        <label for="jams">джемы</label>
-        <input type="checkbox" id="jams" name="jams" value="jams">
-        <input type="submit" value="Применить">
+        <form name = "filter" method = "post">
+          <fieldset>
+            <legend>Сортировка</legend>
+            <select name="sort">
+              <option value="popularities">по поулярности</option>
+              <option value="price_up">по возрастанию цены</option>
+              <option value="price_down">по убыванию цены</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб.-500 руб.</legend>
+            <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <label for="0">0%</label>
+                <input type="radio" id="0" name="fatness" value="0">
+              </li>
+              <li>
+                <label for="less_10">до 10%</label>
+                <input type="radio" id="less_10" name="fatness" value="less_10" checked>
+              </li>
+              <li>
+                <label for="less_30">до 30% </label>
+                <input type="radio" id="less_30" name="fatness" value="less_30"> 
+              </li>
+              <li>
+                <label for="over_30">выше 30%</label>
+                <input type="radio" id="over_30" name="fatness" value="over_30"> 
+              </li>        
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <label for="chocolate_filling">шоколадные</label>
+                <input type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="sugar_powders">сахарные присыпки</label>
+                <input type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="fruits">фрукты</label>
+                <input type="checkbox" id="fruits" name="fruits" value="fruits">  
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="syrups">сиропы</label>
+                <input type="checkbox" id="syrups" name="syrups" value="syrups">    
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label for="jams">джемы</label>
+                <input type="checkbox" id="jams" name="jams" value="jams">    
+              </li>
+            </ul>
+          </fieldset>
+          <input type="submit" value="Применить">
+        </form>
       </section>
-
       <section>
         <h2>Список сливочного мороженого</h2>
         <ul>
@@ -177,7 +216,7 @@
           <li><a href="page_4.html"></a>4</li>
           <li><a href="page_5.html"></a>5</li>
         </ul>
-        <!--дополнить секцию переключателем страниц-->>
+        <!--дополнить секцию переключателем страниц-->
       </section>
     </main>
 
