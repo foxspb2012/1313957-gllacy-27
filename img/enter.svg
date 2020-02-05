@@ -1,3 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-  <image id="Вход" width="21" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAA9ElEQVQ4jbWUsUoEMRRF7xUVFwt3WwsRt7TxfxQrEfwxP8DS1g+xkhVBdApZQeFIMIsxMU5mxANhMvPeOzzmZUYpwDGwZByh7jTonEmXkrY0nlfbk1xK3O5L6gaqn+J1Y70IfdLZfi6e/sJXP9pey9JmcXXADbBZ14wgjuoROGzsdMVOuJlV1op34KKw9EhbuQJc2P4oDdwBe4Uxkzo5Rq0sbO/+JI3baT79Pm4lHfXkaIj00vaB7Yci0kryjt6Ak76yb4OqERPugXklZZg0HB3gGqh9xgVVaRKYFlU9pNKh02/h5V/+p3mnZ5KCeJRQ0rkkfQC0rIQBbWnKugAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+<image overflow="visible" width="21" height="19" xlink:href="Вход.png" >
+</image>
+<g>
+	<polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+	<path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+		/>
+</g>
 </svg>

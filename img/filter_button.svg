@@ -1,3 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="22" viewBox="0 0 20 22">
-  <image id="filter-button" width="20" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAABlklEQVQ4ja2UMUvDQBTH/w0hU4agBgStuDo4VDp061foksW1IH4kV+nYyUW6KEQcOpQWcXAtVkHaWELpYhp48g+Jjb02bUN/cOG4994v9y5HsAwRMUXkSkTuRWQoc4bxGmPmklIVEamLiCfrYU5dESSIiCEijQ1Ei7DGWCbMI0toLMrqSsr2RO0X4sPtA9hXtr0d3wBONQCXO5AhdlxSWFNC+amx5SEAe5ViMBig1+tF81KphGKxqOSkGGlZMkJZEATRSMQZ2NrqWD4o9LIq2aZhGNHgfA0eZrPZ4w7uYARd2mQyec5+6ebQpXW73QcA4x34xnRpvu/3R6PRjRLeEjro4kf5dF33KQiCu7wy1tJBl+Y4TgjgrdVq3eaRsoa1dNBVSALNZpN34rharVZs274GsKdU/2fMNl3XbQP4cBwnuvV6KuWFDyaYptkrl8sXlmVVdF0/B3AQ53hhGL76vt/udDrd6XT6Q1lSS/52mNrpCYAzAOpfeKHbuM339KIijKXc+RGAQwBWSk6JD+CLHyA+/zkAfgH/0/YSWkAmIQAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
+<path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2
+	C20,15.522,15.522,20,10,20z"/>
+<circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
+<circle fill="#ABABAB" cx="10" cy="10" r="2"/>
 </svg>
