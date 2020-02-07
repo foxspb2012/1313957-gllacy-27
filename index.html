@@ -22,15 +22,49 @@
         <li><a href="#">Вход</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
+      <div>
+          <a href="#">Новинки</a>
+          <img src="img/separator_cart.png" alt="разделитель">
+          <a href="catalog.html">Сливочное</a>
+          <a href="#">Шербеты</a>
+          <a href="#">Фруктовый лед</a>
+          <a href="#">Мелорин</a>
+      </div>
+      <form action="#" name="search_item" method="POST" >
+        <input type="search" name="item" placeholder="Крем-брюле" required>
+      </form>
+      <form action="#" name="login_account" method="POST">
+        <fieldset>
+          <input type="email" name="email" placeholder="email@example.com" required>
+          <input type="password" name="password" placeholder="••••••••" required>
+          <ul>
+            <li>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </li>
+          </ul>
+          <input type="submit" value="Войти">
+        </fieldset>
+      </form>
+      <form action="#" name="feedback" method="POST">
+        <label>Мы обязательно вам ответим!</label>
+        <input type="text" name="first_last_name" placeholder="Имя Фамилия" required>
+        <input type="email" name="email" placeholder="email@example.com" required>
+        <textarea name="text_message" id="" cols="30" rows="5" required>В свободной форме</textarea>
+        <button type="button" name="close_form">
+          <img src="img/x_big.svg" alt="Кнопка закрыть">
+        </button>
+        <input type="submit" value="Отправить">
+      </form>
     </header>
 
     <main>
-      <h1>Магазин мороженого «Глейси»</h1>
+      <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
         <p>С 10 до 20, ежедневно<br>
           <a href="tel: +78124502525">8 812 450-25-25</a>
         </p>
         <section>
-          <h2>Карусель слайдов</h2>
+          <h2 class="visually-hidden">Карусель слайдов</h2>
           <ul>
             <li>
               <p>Крем-брюле и пломбир с малиновым джемом</p>
@@ -52,7 +86,7 @@
           </div>
         </section>
         <section>
-          <h2>Подарки</h2>
+          <h2 class="visually-hidden">Подарки</h2>
           <div>
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -65,7 +99,7 @@
           </div>
         </section>
         <section>
-          <h2>Хиты продаж</h2>
+          <h2 class="visually-hidden">Хиты продаж</h2>
           <ul>
             <li>
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -102,7 +136,7 @@
           </ul>
         </section>
         <section>
-          <h2>SEO</h2>
+          <h2 class="visually-hidden">SEO</h2>
           <ul>
             <li><p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p></li>
             <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
@@ -116,14 +150,14 @@
         <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
       </article>
       <div>
-        <h2>Подписка на рассылку</h2>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
         <button type="button">Отправить</button>
       </div>
       <section>
-        <h2>Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <img src="img/pin.png" alt="пин">
-        <!--Здесь должна быть сама карта-->
+        <img src="img/map.png" alt="карта">
         <div>
           <h2>Форма обратной связи</h2>
           <p>Адрес главного офиса и офлайн-магазина:</p>
