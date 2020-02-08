@@ -22,18 +22,17 @@
         <li><a href="#">Вход</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
-      <div>
-          <a href="#">Новинки</a>
-          <img src="img/separator_cart.png" alt="разделитель">
-          <a href="catalog.html">Сливочное</a>
-          <a href="#">Шербеты</a>
-          <a href="#">Фруктовый лед</a>
-          <a href="#">Мелорин</a>
-      </div>
-      <form action="#" name="search_item" method="POST" >
-        <input type="search" name="item" placeholder="Крем-брюле" required>
+      <ul>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="catalog.html">Сливочное</a></li>
+          <li><a href="#">Шербеты</a></li>
+          <li><a href="#">Фруктовый лед</a></li>
+          <li><a href="#">Мелорин</a></li>
+      </ul>
+      <form action="#" method="POST" >
+        <input type="search" name="item" placeholder="Крем-брюле">
       </form>
-      <form action="#" name="login_account" method="POST">
+      <form action="#" method="POST">
         <fieldset>
           <input type="email" name="email" placeholder="email@example.com" required>
           <input type="password" name="password" placeholder="••••••••" required>
@@ -46,14 +45,11 @@
           <input type="submit" value="Войти">
         </fieldset>
       </form>
-      <form action="#" name="feedback" method="POST">
+      <form action="#" method="POST">
         <label>Мы обязательно вам ответим!</label>
         <input type="text" name="first_last_name" placeholder="Имя Фамилия" required>
         <input type="email" name="email" placeholder="email@example.com" required>
-        <textarea name="text_message" id="" cols="30" rows="5" required>В свободной форме</textarea>
-        <button type="button" name="close_form">
-          <img src="img/x_big.svg" alt="Кнопка закрыть">
-        </button>
+        <textarea name="text_message" id="" cols="30" rows="5">В свободной форме</textarea>
         <input type="submit" value="Отправить">
       </form>
     </header>
@@ -176,7 +172,7 @@
           <a href="#">
             <img src="img/twitter.png" alt="Twitter">
           </a>
-        <li>
+        </li>
         <li>
           <a href="#">
             <img src="img/instagram.png" alt="Instagram">
