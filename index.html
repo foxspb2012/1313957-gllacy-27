@@ -29,29 +29,6 @@
           <li><a href="#">Фруктовый лед</a></li>
           <li><a href="#">Мелорин</a></li>
       </ul>
-      <form action="#" method="POST" >
-        <input type="search" name="item" placeholder="Крем-брюле">
-      </form>
-      <form action="#" method="POST">
-        <fieldset>
-          <input type="email" name="email" placeholder="email@example.com" required>
-          <input type="password" name="password" placeholder="••••••••" required>
-          <ul>
-            <li>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </li>
-          </ul>
-          <input type="submit" value="Войти">
-        </fieldset>
-      </form>
-      <form action="#" method="POST">
-        <label>Мы обязательно вам ответим!</label>
-        <input type="text" name="first_last_name" placeholder="Имя Фамилия" required>
-        <input type="email" name="email" placeholder="email@example.com" required>
-        <textarea name="text_message" id="" cols="30" rows="5">В свободной форме</textarea>
-        <input type="submit" value="Отправить">
-      </form>
     </header>
 
     <main>
@@ -98,36 +75,32 @@
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul>
             <li>
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <p>310₽<span>/кг</span></p>
               <a href="#">
+                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <img src="img/creamy_orange_citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
+              <p>310₽<span>/кг</span></p>
             </li>
             <li>
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-              <p>380₽<span>/кг</span></p>
               <a href="#">
+                <h3>Сливочно-кофейное с кусочками шоколада</h3>
                 <img src="img/creamy_coffee_chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
+              <p>380₽<span>/кг</span></p>     
             </li>
             <li>
-              <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
-              <a href="#">Сливочно-клубничное с присыпками из белого шоколада</a>
-              <p>355₽<span>/кг</span></p>
               <a href="#">
+                <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
                 <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
               </a>
+              <p>355₽<span>/кг</span></p>         
             </li>
             <li>
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              <p>415₽<span>/кг</span></p>
               <a href="#">
+                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
                 <img src="img/creamy_brulee_caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
+              <p>415₽<span>/кг</span></p>    
             </li>
           </ul>
         </section>
@@ -152,8 +125,11 @@
       </div>
       <section>
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/pin.png" alt="пин">
-        <img src="img/map.png" alt="карта">
+        <p>
+          <img src="img/map.png" alt="Адрес главного офиса и офлайн-магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/pin.png" alt="пин">
+        </p>
+        <button type="button">Закрыть</button>
         <div>
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -200,5 +176,36 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a>© 2020</p>
       </div>
     </footer>
+
+    <form action="#" method="post">
+      <h2 class="visually-hidden">Поиск товара</h2>
+      <input type="search" name="item" placeholder="Крем-брюле">
+    </form>
+    <form action="#" method="post">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <fieldset>
+        <label for="user_email" class="visually-hidden">Электронная почта</label>
+        <input id="user_email" type="email" name="email" placeholder="email@example.com" required>
+        <label for="user_password" class="visually-hidden">Пароль</label>
+        <input id="user_password" type="password" name="password" placeholder="••••••••" required>
+        <ul>
+          <li>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </li>
+        </ul>
+        <input type="submit" value="Войти">
+      </fieldset>
+    </form>
+    <form action="#" method="post">
+      <h2>Мы обязательно вам ответим!</h2>
+      <label for="field_name" class="visually-hidden">Введите имя и фамилию</label>
+      <input id="field_name" type="text" name="first_last_name" placeholder="Имя Фамилия" required>
+      <label for="field_email" class="visually-hidden">Введите электронную почту</label>
+      <input id="field_email" type="email" name="email" placeholder="email@example.com" required>
+      <label for="field_message" class="visually-hidden">Введите текст сообщения</label>
+      <textarea id="field_message" name="text_message" id="" cols="30" rows="5">В свободной форме</textarea>
+      <input type="submit" value="Отправить">
+    </form>
   </body>
 </html>
