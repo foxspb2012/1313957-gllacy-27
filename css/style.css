@@ -1,143 +1,362 @@
-/*подключение шрифтов из локальной папки*/
+/* подключение шрифтов из локальной папки*/
 @font-face {
-    font-family: 'roboto';
-    src: url('../fonts/roboto.woff') format('woff');
-    src: url('../fonts/roboto.woff2') format('woff2');
-  }
+  font-family: 'roboto';
+  src: url('../fonts/roboto.woff') format('woff');
+  src: url('../fonts/roboto.woff2') format('woff2');
+}
 
-  @font-face {
-    font-family: 'roboto bold';
-    src: url('../fonts/robotobold.woff') format('woff');
-    src: url('../fonts/robotobold.woff2') format('woff2');
-  }
+@font-face {
+  font-family: 'roboto bold';
+  src: url('../fonts/robotobold.woff') format('woff');
+  src: url('../fonts/robotobold.woff2') format('woff2');
+}
 
-  @font-face {
+@font-face {
     font-family: 'roboto medium';
     src: url('../fonts/robotomedium.woff') format('woff');
     src: url('../fonts/robotomedium.woff2') format('woff2');
-  }
+}
 
-/*описание тега body*/
+/* описание тега body*/
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'roboto bold', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    text-align: left;
+  font-family: 'roboto bold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: left;
 
-    background-color: #849d8f;
-    background-image: url('/img/slide_fon_1.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+  background-color: #849d8f;
+  background-image: url('/img/slide_fon_1.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
- /* описание ссылок в макете(кроме исключений)*/ 
+ /* описание ссылок в макете(кроме исключений)*/
 a {
-    font-family: 'roboto medium', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
+  font-family: 'roboto medium', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 a:hover,
 a:focus,
 a:active {
-   color: #ffbc9e; 
+  color: #ffbc9e;
 }
 
+/* описание стилей кнопок*/
+.button {
+  width: 280px;
+  height: 65px;
+  border-radius: 32px;
 
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                    linear-gradient(to top, #e74a35, #f26843);
+}
+
+.button:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+                    linear-gradient(to top, #e74a35, #f26843);
+}
+
+/* отключение буллитов у элементов списка*/
 .site_navigation,
-.user_naviganion {
-    list-style: none;
+.user_navigation,
+.catalog_products,
+.SEO li,
+.footer_social li,
+.footer_about_company li,
+.breadcrumbs li {
+  list-style: none;
 }
 
+/* стили навигации по сайту*/
 .site_navigation a {
-    color: #ffffff;
-    text-decoration: underline;
-    text-align: left; 
+  font-family: 'roboto bold', Arial, sans-serif;
+  color: #ffffff;
 }
 
 .site_navigation a:hover,
 .site_navigation a:focus {
-    color: #333333;
-    background-color: #f7f6f3;
+  color: #333333;
+  background-color: #f7f6f3;
 }
 
 .site_navigation a:active {
-    color: #323232;
-    background-color: #ededed;
+  color: #323232;
+  background-color: #ededed;
 }
 
 .site_navigation_current a {
-    color: #ffffff;
-    background-color: #d07058;
+  color: #ffffff;
+  background-color: #d07058;
 }
 
-.user_naviganion a{
-    font-family: 'roboto medium';
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
+/* стили навигации по пользовательским элементам*/
+.user_naviganion a {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #ffffff;
 }
 
-.user_naviganion .magnifier {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-color: #849d8f;
-    opacity: 0.2;
-    background-image: url('/img/magnifier.svg');
+.magnifier a {
+  /* скроем текст ссылки - "Поиск"*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-color: #849d8f;
+  opacity: 0.2;
+  background-image: url('/img/magnifier.svg');
 }
 
-.user_naviganion .magnifier:hover {
-    background-color: #f8f7f4;
-    background-image: url('/img/magnifier_fill.svg');
+.magnifier a:hover,
+.magnifier a:focus {
+  background-color: #f8f7f4;
+  background-image: url('/img/magnifier_fill.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
-.user_naviganion .enter {
-    background-color: #849d8f;
-    opacity: 0.2;
-    background-image: url('/img/enter.svg');
+.enter a {
+  background-color: #849d8f;
+  opacity: 0.2;
+  background-image: url('/img/enter.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
-.user_naviganion .enter:hover {
-    background-color: #f8f7f4;
-    background-image: url('/img/enter_fill.svg');
+.enter a:hover,
+.enter a:focus {
+  background-color: #f8f7f4;
+  background-image: url('/img/enter_fill.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
-.user_naviganion .cart {
-    background-color: #849d8f;
-    opacity: 0.2;
-    background-image: url('/img/cart.svg');
+.cart {
+  background-color: #849d8f;
+  opacity: 0.2;
+  background-image: url('/img/cart.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
+/* pop-up`s и всплывающие элементы пока спрячем*/
 .catalog_products,
 .product_search,
-.personal_account {
-    display: none;
+.personal_account,
+.cart_filling {
+  display: none;
 }
 
+/* стили блока  SEO*/
 .SEO {
-    background-color: #cccccc;
-    background-image: url('/img/waffles_fon.jpg');
-    
+  background-color: #cccccc;
+  background-image: url('/img/waffles_fon.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .SEO_lines li {
-    font-family: 'roboto';
-    font-size: 16px;
-    line-height: 22px;
-    color: #323232;
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 22px;
+  color: #323232;
 }
 
 .SEO_lines:first-child li {
-    font-family: 'roboto medium';
-    font-size: 24px;
-    line-height: 30px;
-    color: #323232;
+  font-family: 'roboto medium';
+  font-size: 24px;
+  line-height: 30px;
 }
+
+/* стили блока Блог*/
+.blogs {
+  background-color: #cccccc;
+  background-image: url('/img/strawberry_background.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.blogs h2 {
+  font-family: 'roboto medium', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #323232;
+  text-align: left;
+}
+
+.blogs a {
+  font-family: 'roboto bold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #323232;
+  text-align: left;
+}
+
+/* стили блока Подписка на рассылку*/
+.subscribe_newsletter {
+  background-color: #cccccc;
+
+  background-image: url('/img/post_background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-image: url('/img/subscribe_background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.subscribe_newsletter p {
+  font-family: 'roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #5a5a5a;
+  text-align: left;
+}
+
+/* стили кнопок социальных сетей*/
+.footer_social {
+  text-align: left;
+}
+
+.footer_social a {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  opacity: 0.8;
+  background-image: url('/img/framing.png');
+}
+
+.footer_social a:hover,
+.footer_social a:focus {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background-image: url('/img/framing.png');
+}
+
+.footer_social a:active {
+  width: 32px;
+  height: 32px;
+  background-color: #e9e9e9;
+  background-image: url('/img/framing.png');
+}
+
+/* стили ссылок о компании*/
+.footer_about_company {
+  text-align: center;
+}
+
+.footer_about_company a {
+  font-family: 'roboto', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.footer_about_company li:first-child::before {
+  content: url('/img/heart.svg');
+  width: 15px;
+  height: 13px;
+}
+
+.footer_about_company li:first-child {
+  font-family: 'roboto bold', Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* стили копирайта*/
+.footer_copyright {
+  text-align: right;
+}
+
+.logo_htmlacademy {
+  width: 108px;
+  height: 39px;
+}
+
+/* стили страницы catalog.html*/
+/* стили блока расписание */
+.schedule_phone {
+  font-family: 'roboto bold', Arial, sans-serif;
+  font-weight: 400;
+  text-align: right;
+}
+
+.schedule_phone p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.schedule_phone a {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*стили блока breadcrumbs*/
+.breadcrumbs a {
+  font-family: 'roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+  content: " » ";
+}
+
+/* стили списка сливочного мороженого*/
+.catalog_list {
+  list-style: none;
+}
+
+.catalog_item h3{
+  font-family: 'roboto medium', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.catalog_list p {
+  font-size: 45px;
+  line-height: 45px;
+  text-align: left;
+}
+
+.catalog_list span {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: left;
+}
+
+
 
 

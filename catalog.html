@@ -11,18 +11,18 @@
         <a href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
         </a>
-        <ul>
+        <ul class="site_navigation">
           <li class="site_navigation_current"><a>Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="user_navigation">
         <li><a href="#">Поиск</a></li>
         <li><a href="#">Вход</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
-      <form action="#" method="post">
+      <form class="cart_filling" action="#" method="post">
         <ul>
           <li>
               <button type="button"><img src="img/x.svg"></button>
@@ -31,18 +31,20 @@
           </li>
         </ul>
         <p>Итого:</p>
-        <button type="submit">Оформить заказ</button> 
+        <button type="submit">Оформить заказ</button>
       </form>
     </header>
 
     <main>
-      <p>С 10 до 20, ежедневно<br>
+      <div class="schedule_phone">
+        <p>С 10 до 20, ежедневно</p>
         <a href="tel: +78124502525">8 812 450-25-25</a>
-      </p>
-      <ul>
+      </div>
+
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li>Сливочное</li>
+        <li><a>Сливочное</a></li>
       </ul>
       <h1>Сливочное мороженое</h1>
       <section>
@@ -120,8 +122,8 @@
       </section>
       <section>
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
-        <ul>
-          <li>
+        <ul class="catalog_list">
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
@@ -145,8 +147,8 @@
             </a>
             <a href="#">
               <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
-            </a>   
-            <p>355₽<span>/кг</span></p> 
+            </a>
+            <p>355₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -164,7 +166,7 @@
             <a href="#">
               <img src="img/creamy_cranberry.jpg" alt="Сливочное с брусничным джемом">
             </a>
-            <p>325₽<span>/кг</span></p> 
+            <p>325₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -173,7 +175,7 @@
             <a href="#">
               <img src="img/creamy_blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
-            <p>410₽<span>/кг</span></p>     
+            <p>410₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -182,7 +184,7 @@
             <a href="#">
               <img src="img/creamy_lemon_caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
-            <p>375₽<span>/кг</span></p>  
+            <p>375₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -200,7 +202,7 @@
             <a href="#">
               <img src="img/creamy_vanilla_chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
-            <p>440₽<span>/кг</span></p>    
+            <p>440₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -209,7 +211,7 @@
             <a href="#">
               <img src="img/creamy_menthol_syrup.jpg" alt="Сливочноe с ментоловым сиропом">
             </a>
-            <p>435₽<span>/кг</span></p>         
+            <p>435₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -218,7 +220,7 @@
             <a href="#">
               <img src="img/creamy_chunks_dark_chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
             </a>
-            <p>355₽<span>/кг</span></p>   
+            <p>355₽<span>/кг</span></p>
           </li>
           <li>
             <a href="#">
@@ -227,7 +229,7 @@
             <a href="#">
               <img src="img/creamy_mint_syrup.jpg" alt="Сливочное с мятным сиропом">
             </a>
-            <p>420₽<span>/кг</span></p>   
+            <p>420₽<span>/кг</span></p>
           </li>
         </ul>
       </section>
@@ -246,37 +248,41 @@
     </main>
 
     <footer>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/twitter.png" alt="Twitter">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/instagram.png" alt="Instagram">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/facebook.png" alt="Facebook">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/vk.png" alt="ВКонтакте">
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <div>
-        <img src="img/logo_htmlacademy_small.svg" alt="Логотип HTML-Academy">
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a> © 2020</p>
+      <div class="footer_social">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/instagram.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/vk.png" alt="ВКонтакте">
+            </a>
+          </li>
+        </ul>
       </div>
+      <div class="footer_about_company">
+        <ul>
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+    </div>
+    <div class="footer_copyright">
+      <img src="img/logo_htmlacademy_small.svg" alt="Логотип HTML-Academy">
+      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a> © 2020</p>
+    </div>
     </footer>
 
