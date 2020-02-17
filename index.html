@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
@@ -11,29 +13,29 @@
         <a>
           <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
         </a>
-        <ul>
+        <ul class="site_navigation">
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="#">Поиск</a></li>
-        <li><a href="#">Вход</a></li>
-        <li><a href="#">Корзина</a></li>
+      <ul class="user_naviganion">
+        <li class="magnifier"><a href="#">Поиск</a></li>
+        <li class="enter"><a href="#">Вход</a></li>
+        <li class="cart"><a href="#">Пусто</a></li>
       </ul>
-      <ul>
+      <ul class="catalog_products">
           <li><a href="#">Новинки</a></li>
           <li><a href="catalog.html">Сливочное</a></li>
           <li><a href="#">Шербеты</a></li>
           <li><a href="#">Фруктовый лед</a></li>
           <li><a href="#">Мелорин</a></li>
       </ul>
-      <form action="#" method="post">
+      <form class="product_search" action="#" method="post">
         <h2 class="visually-hidden">Поиск товара</h2>
         <input type="search" name="item" placeholder="Крем-брюле">
       </form>
-      <form action="#" method="post">
+      <form class="personal_account" action="#" method="post">
         <h2 class="visually-hidden">Личный кабинет</h2>
         <fieldset>
           <label for="user_email" class="visually-hidden">Электронная почта</label>
@@ -53,7 +55,7 @@
       </form>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
         <p>С 10 до 20, ежедневно<br>
           <a href="tel: +78124502525">8 812 450-25-25</a>
@@ -100,7 +102,7 @@
               <a href="#">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
-              <a> 
+              <a href="#"> 
                 <img src="img/creamy_orange_citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
               <p>310₽<span>/кг</span></p>
@@ -109,7 +111,7 @@
               <a href="#">
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
               </a>
-              <a> 
+              <a href="#"> 
                 <img src="img/creamy_coffee_chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
               <p>380₽<span>/кг</span></p>     
@@ -118,7 +120,7 @@
               <a href="#">
                 <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
               </a>
-              <a> 
+              <a href="#"> 
                 <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
               </a>
               <p>355₽<span>/кг</span></p>         
@@ -127,16 +129,16 @@
               <a href="#">
                 <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
-              <a> 
+              <a href="#"> 
                 <img src="img/creamy_brulee_caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>  
               <p>415₽<span>/кг</span></p>    
             </li>
           </ul>
         </section>
-        <section>
+        <section class="SEO">
           <h2 class="visually-hidden">SEO</h2>
-          <ul>
+          <ul class="SEO_lines">
             <li><p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p></li>
             <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
             <li><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>

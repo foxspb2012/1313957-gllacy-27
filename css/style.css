@@ -1,0 +1,143 @@
+/*подключение шрифтов из локальной папки*/
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto.woff') format('woff');
+    src: url('../fonts/roboto.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'roboto bold';
+    src: url('../fonts/robotobold.woff') format('woff');
+    src: url('../fonts/robotobold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'roboto medium';
+    src: url('../fonts/robotomedium.woff') format('woff');
+    src: url('../fonts/robotomedium.woff2') format('woff2');
+  }
+
+/*описание тега body*/
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'roboto bold', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: left;
+
+    background-color: #849d8f;
+    background-image: url('/img/slide_fon_1.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+ /* описание ссылок в макете(кроме исключений)*/ 
+a {
+    font-family: 'roboto medium', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+a:hover,
+a:focus,
+a:active {
+   color: #ffbc9e; 
+}
+
+
+.site_navigation,
+.user_naviganion {
+    list-style: none;
+}
+
+.site_navigation a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-align: left; 
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus {
+    color: #333333;
+    background-color: #f7f6f3;
+}
+
+.site_navigation a:active {
+    color: #323232;
+    background-color: #ededed;
+}
+
+.site_navigation_current a {
+    color: #ffffff;
+    background-color: #d07058;
+}
+
+.user_naviganion a{
+    font-family: 'roboto medium';
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.user_naviganion .magnifier {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #849d8f;
+    opacity: 0.2;
+    background-image: url('/img/magnifier.svg');
+}
+
+.user_naviganion .magnifier:hover {
+    background-color: #f8f7f4;
+    background-image: url('/img/magnifier_fill.svg');
+}
+
+.user_naviganion .enter {
+    background-color: #849d8f;
+    opacity: 0.2;
+    background-image: url('/img/enter.svg');
+}
+
+.user_naviganion .enter:hover {
+    background-color: #f8f7f4;
+    background-image: url('/img/enter_fill.svg');
+}
+
+.user_naviganion .cart {
+    background-color: #849d8f;
+    opacity: 0.2;
+    background-image: url('/img/cart.svg');
+}
+
+.catalog_products,
+.product_search,
+.personal_account {
+    display: none;
+}
+
+.SEO {
+    background-color: #cccccc;
+    background-image: url('/img/waffles_fon.jpg');
+    
+}
+
+.SEO_lines li {
+    font-family: 'roboto';
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.SEO_lines:first-child li {
+    font-family: 'roboto medium';
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+
