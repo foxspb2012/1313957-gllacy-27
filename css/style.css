@@ -1,20 +1,8 @@
 /* подключение шрифтов из локальной папки*/
 @font-face {
-  font-family: 'roboto';
+  font-family: 'Roboto';
   src: url('../fonts/roboto.woff') format('woff');
   src: url('../fonts/roboto.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'roboto bold';
-  src: url('../fonts/robotobold.woff') format('woff');
-  src: url('../fonts/robotobold.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'roboto medium';
-    src: url('../fonts/robotomedium.woff') format('woff');
-    src: url('../fonts/robotomedium.woff2') format('woff2');
 }
 
 /* описание тега body*/
@@ -22,9 +10,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'roboto bold', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 18px;
   color: #ffffff;
   text-align: left;
@@ -37,9 +25,9 @@ body {
 
  /* описание ссылок в макете(кроме исключений)*/
 a {
-  font-family: 'roboto medium', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 18px;
   color: #ffffff;
 }
@@ -56,9 +44,11 @@ a:active {
   height: 65px;
   border-radius: 32px;
 
+  font: inherit;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  vertical-align: middle;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
@@ -76,11 +66,11 @@ a:active {
                     linear-gradient(to top, #e74a35, #f26843);
 }
 
-/* отключение буллитов у элементов списка*/
+/* отключение буллитов у элементов списков*/
 .site_navigation,
 .user_navigation,
 .catalog_products,
-.SEO li,
+.seo li,
 .footer_social li,
 .footer_about_company li,
 .breadcrumbs li {
@@ -89,7 +79,8 @@ a:active {
 
 /* стили навигации по сайту*/
 .site_navigation a {
-  font-family: 'roboto bold', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -104,41 +95,43 @@ a:active {
   background-color: #ededed;
 }
 
-.site_navigation_current a {
+.current_page a {
   color: #ffffff;
   background-color: #d07058;
 }
 
+.current_page a:hover  {
+   background-color: #d07058;
+   color: #ffffff;
+}
+
 /* стили навигации по пользовательским элементам*/
-.user_naviganion a {
+.user_navigation a {
   font-size: 14px;
   line-height: 16px;
   text-align: right;
   color: #ffffff;
 }
 
-.magnifier a {
-  /* скроем текст ссылки - "Поиск"*/
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+ /* скроем текст ссылки - "Поиск" и укажем ей картинку*/
+.magnifier span {
+  display: none;
+}
 
-  background-color: #849d8f;
-  opacity: 0.2;
+.magnifier a {
   background-image: url('/img/magnifier.svg');
+  background-repeat: no-repeat;
 }
 
 .magnifier a:hover,
 .magnifier a:focus {
   background-color: #f8f7f4;
-  background-image: url('/img/magnifier_fill.svg');
+  background-image: url("/img/magnifier_fill.svg");
   background-position: left center;
   background-repeat: no-repeat;
 }
 
 .enter a {
-  background-color: #849d8f;
-  opacity: 0.2;
   background-image: url('/img/enter.svg');
   background-position: left center;
   background-repeat: no-repeat;
@@ -146,18 +139,29 @@ a:active {
 
 .enter a:hover,
 .enter a:focus {
+  color: #323232;
   background-color: #f8f7f4;
   background-image: url('/img/enter_fill.svg');
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-.cart {
-  background-color: #849d8f;
-  opacity: 0.2;
+.cart a {
   background-image: url('/img/cart.svg');
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+.cart a:hover,
+.cart a:focus {
+  color: #ffffff;
+}
+
+/* опишем состояние заполненной корзины*/
+.cart_fill {
+  background-color: #f8f7f4;
+  background-image: url('/img/cart_fill.svg');
+  color: #323232;
 }
 
 /* pop-up`s и всплывающие элементы пока спрячем*/
@@ -168,16 +172,16 @@ a:active {
   display: none;
 }
 
-/* стили блока  SEO*/
-.SEO {
+/* стили блока SEO*/
+.seo {
   background-color: #cccccc;
   background-image: url('/img/waffles_fon.jpg');
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
-.SEO_lines li {
-  font-family: 'roboto';
+.seo li {
+  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
   text-align: left;
@@ -185,8 +189,9 @@ a:active {
   color: #323232;
 }
 
-.SEO_lines:first-child li {
-  font-family: 'roboto medium';
+.seo li:first-child {
+  font-family: 'Roboto';
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
@@ -200,19 +205,19 @@ a:active {
 }
 
 .blogs h2 {
-  font-family: 'roboto medium', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
   color: #323232;
   text-align: left;
 }
 
 .blogs a {
-  font-family: 'roboto bold', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
   color: #323232;
   text-align: left;
 }
@@ -228,15 +233,26 @@ a:active {
   background-image: url('/img/subscribe_background.png');
   background-position: center center;
   background-repeat: no-repeat;
+  color: #5a5a5a;
 }
 
 .subscribe_newsletter p {
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #5a5a5a;
   text-align: left;
+}
+
+.subscribe_newsletter .button {
+  width: 129px;
+  height: 44px;
+  border-radius: 22px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+
+  color: #f8f7f4;
 }
 
 /* стили кнопок социальных сетей*/
@@ -273,7 +289,7 @@ a:active {
 }
 
 .footer_about_company a {
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-align: left;
@@ -286,8 +302,8 @@ a:active {
 }
 
 .footer_about_company li:first-child {
-  font-family: 'roboto bold', Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -304,8 +320,8 @@ a:active {
 /* стили страницы catalog.html*/
 /* стили блока расписание */
 .schedule_phone {
-  font-family: 'roboto bold', Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -321,7 +337,7 @@ a:active {
 
 /*стили блока breadcrumbs*/
 .breadcrumbs a {
-  font-family: 'roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -337,9 +353,9 @@ a:active {
   list-style: none;
 }
 
-.catalog_item h3{
-  font-family: 'roboto medium', Arial, sans-serif;
-  font-weight: 400;
+.catalog_item h3 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
