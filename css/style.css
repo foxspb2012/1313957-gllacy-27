@@ -95,14 +95,9 @@ a:active {
   background-color: #ededed;
 }
 
-.current_page a {
+.site_navigation .active a {
   color: #ffffff;
   background-color: #d07058;
-}
-
-.current_page a:hover  {
-   background-color: #d07058;
-   color: #ffffff;
 }
 
 /* стили навигации по пользовательским элементам*/
