@@ -343,6 +343,10 @@ a:active {
   content: " » ";
 }
 
+.breadcrumbs .active a {
+  color: #ffffff;
+}
+
 /* стили списка сливочного мороженого*/
 .catalog_list {
   list-style: none;
