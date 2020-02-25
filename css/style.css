@@ -3,24 +3,24 @@
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff') format('woff');
   src: url('../fonts/roboto.woff2') format('woff2');
-  font-weight: 400; 
-  font-style: normal; 
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/robotobold.woff') format('woff');
   src: url('../fonts/robotobold.woff2') format('woff2');
-  font-weight: 700; 
-  font-style: normal; 
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/robotomedium.woff') format('woff');
   src: url('../fonts/robotomedium.woff2') format('woff2');
-  font-weight: 500; 
-  font-style: normal; 
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* описание тега body*/
@@ -69,6 +69,7 @@ a:active {
   vertical-align: middle;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
+  border: none;
 }
 
 .button:hover,
@@ -84,14 +85,19 @@ a:active {
                     linear-gradient(to top, #e74a35, #f26843);
 }
 
+.link_in_button:hover {
+  color: #ffffff;
+}
+
 /* отключение буллитов у элементов списков*/
 .site_navigation,
 .user_navigation,
 .catalog_products,
-.seo li,
-.footer_social li,
-.footer_about_company li,
-.breadcrumbs li {
+.seo_items,
+.footer_social ul,
+.footer_about_company ul,
+.breadcrumbs,
+.slides {
   list-style: none;
 }
 
@@ -113,7 +119,7 @@ a:active {
   background-color: #ededed;
 }
 
-.site_navigation .active a {
+.site_navigation .current a {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -183,6 +189,75 @@ a:active {
 .personal_account,
 .cart_filling {
   display: none;
+}
+
+/* стили блока слайдов*/
+.slides {
+  background-color: #cccccc;
+}
+
+.slides .slide_1 {
+  background-image: url('/img/ice_cream_slide_1.png');
+}
+.slides .slide_2 {
+  background-image: url('/img/ice_cream_slide_2.png');
+}
+.slides .slide_3 {
+  background-image: url('/img/ice_cream_slide_3.png');
+}
+
+.slides p {
+  font-size: 60px;
+  line-height: 60.5px;
+}
+
+.slides .button {
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 16px 42px;
+}
+
+.slides .button:hover,
+.slides .button:focus {
+  color: #ffffff;
+}
+
+/* стили блока Подарки*/
+.raspberry {
+  background-color: #cccccc;
+  background-image: url('/img/raspberries_free.jpg');
+}
+
+.chocolate {
+  background-color: #cccccc;
+  background-image: url('/img/chocolate_free.jpg');
+}
+
+.presents h3 {
+  font: inherit;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.presents p {
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.presents .button {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 23px;
+}
+
+.presents .button:hover,
+.presents .button:focus {
+  color: #ffffff;
 }
 
 /* стили блока SEO*/
@@ -267,6 +342,31 @@ a:active {
 
   color: #f8f7f4;
 }
+
+/* стили карты и блока контакты*/
+.contacts p:nth-child(n) {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+}
+
+.contacts p:nth-child(2n) {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
+}
+
+.contacts .button {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 28px;
+}
+
 
 /* стили кнопок социальных сетей*/
 .footer_social {
@@ -361,8 +461,73 @@ a:active {
   content: " » ";
 }
 
-.breadcrumbs .active a {
+.breadcrumbs .current a {
   color: #ffffff;
+}
+
+/* стили блока фильтров*/
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+.sorting {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.sorting option[selected] {
+  font-size: 16px;
+  color: #323232;
+}
+
+.filter_input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.filter label {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.filter .button {
+  width: 144px;
+  height: 37px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  color: #323232;
+  background: #ffffff;
+}
+
+.filter .button:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
 }
 
 /* стили списка сливочного мороженого*/
@@ -390,6 +555,39 @@ a:active {
   text-align: left;
 }
 
+/* стили пагинации*/
+.pagination_list a {
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+}
 
+.pagination_list .current_page {
+  opacity: 0.2;
+}
 
+.pagination_list .pagination_item_current {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+  background-color: #ffffff;
+}
 
+.pagination_list .pagination_item {
+  font-size: 16px;
+  line-height: 18px;
+  color:  #ffffff;
+}
+
+.pagination_list .pagination_item:hover,
+.pagination_list .pagination_item:focus {
+  color:  #ffffff;
+  opacity: 0.2;
+}
+
+.pagination_list .pagination_item:active {
+  color:  #000000;
+  opacity: 1;
+}

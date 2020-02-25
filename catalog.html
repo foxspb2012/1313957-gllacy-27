@@ -14,7 +14,7 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
         </a>
         <ul class="site_navigation">
-          <li class="active"><a>Каталог</a></li>
+          <li class="current"><a>Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -46,15 +46,15 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li class="active"><a>Сливочное</a></li>
+        <li class="current"><a>Сливочное</a></li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтры по мороженому</h2>
         <form name = "filter" method = "get">
           <fieldset>
             <legend>Сортировка</legend>
-            <select name="sort">
+            <select class="sorting" name="sort">
               <option value="popularities">по поулярности</option>
               <option value="price_up">сначала недорогие</option>
               <option value="price_down">сначала дорогие</option>
@@ -70,19 +70,19 @@
             <ul>
               <li>
                 <label for="0">0%</label>
-                <input type="radio" id="0" name="fatness" value="0">
+                <input class="filter_input" type="radio" id="0" name="fatness" value="0">
               </li>
               <li>
                 <label for="less_10">до 10%</label>
-                <input type="radio" id="less_10" name="fatness" value="less_10" checked>
+                <input class="filter_input" type="radio" id="less_10" name="fatness" value="less_10" checked>
               </li>
               <li>
                 <label for="less_30">до 30%</label>
-                <input type="radio" id="less_30" name="fatness" value="less_30">
+                <input class="filter_input" type="radio" id="less_30" name="fatness" value="less_30">
               </li>
               <li>
                 <label for="over_30">выше 30%</label>
-                <input type="radio" id="over_30" name="fatness" value="over_30">
+                <input class="filter_input" type="radio" id="over_30" name="fatness" value="over_30">
               </li>
             </ul>
           </fieldset>
@@ -91,35 +91,35 @@
             <ul>
               <li>
                 <label for="chocolate_filling">шоколадные</label>
-                <input type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling" checked>
+                <input class="filter_input" type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling" checked>
               </li>
             </ul>
             <ul>
               <li>
                 <label for="sugar_powders">сахарные присыпки</label>
-                <input type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders" checked>
+                <input class="filter_input" type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders" checked>
               </li>
             </ul>
             <ul>
               <li>
                 <label for="fruits">фрукты</label>
-                <input type="checkbox" id="fruits" name="fruits" value="fruits">
+                <input class="filter_input" type="checkbox" id="fruits" name="fruits" value="fruits">
               </li>
             </ul>
             <ul>
               <li>
                 <label for="syrups">сиропы</label>
-                <input type="checkbox" id="syrups" name="syrups" value="syrups">
+                <input class="filter_input" type="checkbox" id="syrups" name="syrups" value="syrups">
               </li>
             </ul>
             <ul>
               <li>
                 <label for="jams">джемы</label>
-                <input type="checkbox" id="jams" name="jams" value="jams">
+                <input class="filter_input" type="checkbox" id="jams" name="jams" value="jams">
               </li>
             </ul>
           </fieldset>
-          <input type="submit" value="Применить">
+          <input class="button" type="submit" value="Применить">
         </form>
       </section>
       <section>
@@ -237,14 +237,14 @@
       </section>
       <section>
         <h2 class="visually-hidden">Переключение страниц</h2>
-        <ul>
-          <li><a><img src="img/icon_left_small.png" alt="предыдущая страница"></a></li>
-          <li><a>1</a></li>
-          <li><a href="page_2.html">2</a></li>
-          <li><a href="page_3.html">3</a></li>
-          <li><a href="page_4.html">4</a></li>
-          <li><a href="page_5.html">5</a></li>
-          <li><a href="page_2.html"><img src="img/icon_right_small.png" alt="следующая страница"></a></li>
+        <ul class="pagination_list">
+          <li><a class="current_page"><img src="img/icon_left_small.png" alt="предыдущая страница"></a></li>
+          <li><a class="pagination_item_current">1</a></li>
+          <li><a class="pagination_item" href="page_2.html">2</a></li>
+          <li><a class="pagination_item" href="page_3.html">3</a></li>
+          <li><a class="pagination_item" href="page_4.html">4</a></li>
+          <li><a class="pagination_item" href="page_5.html">5</a></li>
+          <li><a class="next_page" href="page_2.html"><img src="img/icon_right_small.png" alt="следующая страница"></a></li>
         </ul>
       </section>
     </main>
