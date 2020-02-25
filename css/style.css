@@ -145,7 +145,7 @@ a:active {
 .magnifier a:hover,
 .magnifier a:focus {
   background-color: #f8f7f4;
-  background-image: url("/img/magnifier_fill.svg");
+  background-image: url('/img/magnifier_fill.svg');
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -227,11 +227,13 @@ a:active {
 .raspberry {
   background-color: #cccccc;
   background-image: url('/img/raspberries_free.jpg');
+  background-repeat: no-repeat;
 }
 
 .chocolate {
   background-color: #cccccc;
   background-image: url('/img/chocolate_free.jpg');
+  background-repeat: no-repeat;
 }
 
 .presents h3 {
@@ -265,7 +267,7 @@ a:active {
   background-color: #cccccc;
   background-image: url('/img/waffles_fon.jpg');
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 
 .seo li {
