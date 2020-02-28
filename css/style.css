@@ -369,6 +369,10 @@ a:active {
   padding: 13px 28px;
 }
 
+.contacts .button:hover,
+.contacts .button:active {
+  color: #ffffff;
+}
 
 /* стили кнопок социальных сетей*/
 .footer_social {
