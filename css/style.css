@@ -597,3 +597,124 @@ a:active {
   color:  #000000;
   opacity: 1;
 }
+
+/* Стили сеток*/
+.main_header {
+  width: 100%;
+}
+
+.main_navigation {
+  display: flex;
+  padding-top: 9px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main_navigation .container {
+  display: flex;
+  align-items: center;
+}
+
+.main_header_logo {
+  width: 154px;
+  height: 64px;
+
+  margin-right: 24px;
+}
+
+.site_navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user_navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 245px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main_footer {
+
+}
+
+.main_footer .container {
+  display: flex;
+}
+
+.footer_social {
+  width: 186px;
+  padding: 36px 0 29px 0;
+  margin: 0;
+  margin-right: 215px;
+}
+
+.footer_about_company {
+  align-content: center;
+  width: 325px;
+  padding: 36px 0 29px 0;
+  margin: 0;
+}
+
+.columns {
+  width: 325px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer_about_company .columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_column {
+  width: 111px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.second_column {
+  width: 161px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.footer_copyright {
+  width: 189px;
+  margin: 0;
+  margin-left: auto;
+  padding: 18px 0 26px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
