@@ -40,17 +40,20 @@
       </form>
     </header>
 
-    <main>
-      <div class="schedule_phone">
-        <p>С 10 до 20, ежедневно</p>
-        <a href="tel: +78124502525">8 812 450-25-25</a>
-      </div>
+    <main class="container">
+      <div class="under_header">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li class="current"><a>Сливочное</a></li>
+        </ul>
 
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li class="current"><a>Сливочное</a></li>
-      </ul>
+        <div class="schedule_phone">
+          <p>С 10 до 20, ежедневно</p>
+          <a href="tel: +78124502525">8 812 450-25-25</a>
+        </div>
+      </div>
+     
       <h1>Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтры по мороженому</h2>
@@ -125,7 +128,7 @@
           <input class="button" type="submit" value="Применить">
         </form>
       </section>
-      <section>
+      <section class="catalog">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
         <ul class="catalog_list">
           <li class="catalog_item">
@@ -137,7 +140,7 @@
             </a>
             <p>310₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
@@ -146,7 +149,7 @@
             </a>
             <p>380₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
             </a>
@@ -155,7 +158,7 @@
             </a>
             <p>355₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
@@ -164,7 +167,7 @@
             </a>
             <p>415₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное с брусничным джемом</h3>
             </a>
@@ -173,7 +176,7 @@
             </a>
             <p>325₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочно-черничное с цельными ягодами черники</h3>
             </a>
@@ -182,7 +185,7 @@
             </a>
             <p>410₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
@@ -191,7 +194,7 @@
             </a>
             <p>375₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное с шоколадной стружкой</h3>
             </a>
@@ -200,7 +203,7 @@
             </a>
             <p>320₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
@@ -209,7 +212,7 @@
             </a>
             <p>440₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочноe с ментоловым сиропом</h3>
             </a>
@@ -218,7 +221,7 @@
             </a>
             <p>435₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное с кусочками черного шоколада</h3>
             </a>
@@ -227,7 +230,7 @@
             </a>
             <p>355₽<span>/кг</span></p>
           </li>
-          <li>
+          <li class="catalog_item">
             <a href="#">
               <h3>Сливочное с мятным сиропом</h3>
             </a>
@@ -252,34 +255,38 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer_social">
-        <ul>
-          <li>
-            <a class="social_button" href="#">Twitter</a>
-          </li>
-          <li>
-            <a class="social_button" href="#">Instagram</a>
-          </li>
-          <li>
-            <a class="social_button" href="#">Facebook</a>
-          </li>
-          <li>
-            <a class="social_button" href="#">ВКонтакте</a>
-          </li>
-        </ul>
+    <footer class="main_footer">
+      <div class="container">
+        <div class="footer_social">
+          <ul>
+            <li>
+              <a class="social_button" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="social_button" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="social_button" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="social_button" href="#">ВКонтакте</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_about_company">
+            <ul class="first_column">
+              <li><a href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul class="second_column">
+              <li><a href="#">Наши документы</a></li>
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+        </div>
+        <div class="footer_copyright">
+          <img class="logo_htmlacademy" src="img/logo_htmlacademy_small.svg" width="108" height="39" alt="Логотип HTML-Academy">
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a>© 2020</p>
+        </div>
       </div>
-      <div class="footer_about_company">
-        <ul>
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-    </div>
-    <div class="footer_copyright">
-      <img src="img/logo_htmlacademy_small.svg" alt="Логотип HTML-Academy">
-      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a> © 2020</p>
-    </div>
     </footer>
 
