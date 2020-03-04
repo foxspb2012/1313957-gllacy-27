@@ -10,7 +10,7 @@
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
     <header class="main_header">
       <nav class="main_navigation">
-        <div class="container">
+        <div class="main_navigation_wrapper container">
           <a class="main_header_logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
           </a>
@@ -140,39 +140,29 @@
         </section>
         <section class="seo">
           <h2 class="seo_header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-          <div class="seo_items">
-            <ul class="left_column">
-              <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-              <li><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
-            </ul>
-            <ul class="rigth_column">
-              <li><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-              <li><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и сохранить превосходный вкус.</p></li>
-            </ul>
-          </div>
+          <ul class="seo_items">
+            <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+            <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и сохранить превосходный вкус.</li>
+          </ul>
         </section>
-       <div class="blogs_newsletter">
-        <article class="blogs">
-          <div class="blogs_writes">
-            <h2>Новое в нашем блоге</h2>
-            <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-            </div>
-        </article>
-        <div class="subscribe_newsletter">
-          <form action="#">
-            <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <div class="subscribes">
-              <label class="subscribe_text" for="field_email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-                Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</label>
-              <div class="subscribe_inputs">
-                <input class="input_email" id="field_email" type="email" name="email" placeholder="email@example.com" required>
-                <input class="button" type="submit" value="Отправить">
-              </div>
-            </div>
-          </form>
-        </div>
-       </div>
-      <section>
+        <section class="blogs_subscribe">
+            <article class="blogs">
+              <h2>Новое в нашем блоге</h2>
+              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </article>
+
+            <form class="subscribe" action="#">
+              <h2 class="visually-hidden">Подписка на рассылку</h2>
+                <label class="subscribe_text" for="field_email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+                  Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</label>
+                <div class="subscribe_inputs">
+                  <input class="input_email" id="field_email" type="email" name="email" placeholder="email@example.com" required>
+                  <input class="button" type="submit" value="Отправить">
+                </div>
+            </form>
+          </section>
         <h2 class="visually-hidden">Карта</h2>
         <p>
           <img src="img/map.png" alt="Адрес главного офиса и офлайн-магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -192,7 +182,7 @@
     </main>
 
     <footer class="main_footer">
-      <div class="container">
+      <div class="main_footer_wrapper container">
         <div class="footer_social">
           <ul>
             <li>

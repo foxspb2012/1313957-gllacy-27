@@ -23,6 +23,11 @@
   font-style: normal;
 }
 
+/* описание стиля visually-hidden*/
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+}
 /* описание тега body*/
 body {
   margin: 0;
@@ -225,15 +230,19 @@ a:active {
 
 /* стили блока Подарки*/
 .raspberry {
-  background-color: #cccccc;
+  background-color: #b51c2e;
   background-image: url('../img/raspberries_free.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .chocolate {
-  background-color: #cccccc;
+  background-color: #5b351a;
   background-image: url('../img/chocolate_free.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .presents h3 {
@@ -264,10 +273,12 @@ a:active {
 
 /* стили блока SEO*/
 .seo {
-  background-color: #cccccc;
+  background-color: #e8d7b6;
   background-image: url('../img/waffles_fon.jpg');
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .seo li {
@@ -289,10 +300,12 @@ a:active {
 
 /* стили блока Блог*/
 .blogs {
-  background-color: #cccccc;
+  background-color: #ffffff;
   background-image: url('../img/strawberry_background.png');
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .blogs h2 {
@@ -314,8 +327,8 @@ a:active {
 }
 
 /* стили блока Подписка на рассылку*/
-.subscribe_newsletter {
-  background-color: #cccccc;
+.subscribe {
+  background-color: #f8f7f4;
 
   background-image: url('../img/post_background.png');
   background-position: center center;
@@ -324,10 +337,12 @@ a:active {
   background-image: url('../img/subscribe_background.png');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
   color: #5a5a5a;
 }
 
-.subscribe_newsletter .subscribe_text {
+.subscribe .subscribe_text {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -336,7 +351,7 @@ a:active {
   text-align: left;
 }
 
-.subscribe_newsletter .button {
+.subscribe .button {
   width: 129px;
   height: 44px;
   border-radius: 22px;
@@ -346,7 +361,7 @@ a:active {
   color: #f8f7f4;
 }
 
-.subscribe_newsletter .button {
+.subscribe .button {
   width: 129px;
   height: 44px;
   border-radius: 22px;
@@ -356,14 +371,14 @@ a:active {
   color: #f8f7f4;
 }
 
-.subscribe_newsletter .button:hover,
-.subscribe_newsletter .button:focus {
+.subscribe .button:hover,
+.subscribe .button:focus {
   box-shadow: 0px 1px 2px 0 #ac1000;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
                     linear-gradient(to top, #e74a35, #f26843);
 }
 
-.subscribe_newsletter .button:active {
+.subscribe .button:active {
   box-shadow: inset 0px 2px 2px 0 #942718;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
                     linear-gradient(to top, #e74a35, #f26843);
@@ -430,10 +445,9 @@ a:active {
   text-align: left;
 }
 
-.footer_about_company li:first-child::before {
+.first_column li:first-child::before {
+  position: relative;
   content: url('../img/heart.svg');
-  width: 15px;
-  height: 13px;
 }
 
 .footer_about_company li:first-child {
@@ -619,6 +633,12 @@ a:active {
 }
 
 /* Стили сеток*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
 .main_header {
   width: 100%;
 }
@@ -628,13 +648,7 @@ a:active {
   padding-top: 9px;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 27px;
-}
-
-.main_navigation .container {
+.main_navigation_wrapper {
   display: flex;
   align-items: center;
 }
@@ -670,77 +684,50 @@ a:active {
 
 .seo {
   margin-bottom: 40px;
+  padding: 21px;
 }
 
 .seo_header {
-  width: 1013px;
-  padding-top: 29px;
-  padding-left: 21px;
-  margin: 0;
+  padding-top: 8px;
 }
 
 .seo_items {
   display: flex;
-  width: 1035px;
-  justify-content: space-between;
-  margin: 0;
-  padding: 26px 0;
-  padding-left: 71px;
+  flex-wrap: wrap;
 }
 
-.left_column {
+.seo_items li {
   width: 475px;
-  margin: 0;
-  padding: 0;
-
-list-style: none;
+  padding-left: 50px;
 }
 
-.rigth_column {
-  width: 470px;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.blogs_newsletter {
+.blogs_subscribe {
   display: flex;
   justify-content: space-between;
   margin-bottom: 39px;
 }
 
 .blogs {
-width: 590px;
+  margin: 0;
+  padding: 20px 261px 20px 20px;
+  width: 560px;
 }
 
-.blogs_writes {
-  display: flex;  
-  justify-content: space-between;
-  flex-direction: column;
-  
-  width: 280px;
-  margin-top: 26px;
-  margin-left: 20px;
-  margin-bottom: 85px;
+.blogs h2 {
+  padding-top: 6px;
 }
 
-.subscribe_newsletter {
-  width: 590px;
+.subscribe {
+  width: 560px;
 }
 
-.subscribes {
+.subscribe .subscribe_text {
+  padding-top: 37px;
+  padding-left: 27px;
+}
+
+.subscribe .subscribe_inputs {
   display: flex;
-  flex-direction: column;
-}
-
-.subscribes .subscribe_text {
-  padding: 37px 27px;
-  width: 506px;
-}
-
-.subscribes .subscribe_inputs {
-  display: flex;  
   justify-content: space-between;
   padding-top: 37px;
   padding-left: 26px;
@@ -752,7 +739,7 @@ width: 590px;
    width: 368px;
 }
 
-.main_footer .container {
+.main_footer_wrapper {
   display: flex;
 }
 
@@ -763,7 +750,7 @@ width: 590px;
   margin-right: 215px;
 }
 
-.container .footer_about_company{
+.main_footer_wrapper .footer_about_company{
   display: flex;
   align-content: center;
 }
@@ -822,11 +809,11 @@ width: 590px;
   margin: 0;
   padding: 0;
  }
- 
+
   .under_header .schedule_phone p {
   margin-bottom: 8px;
  }
- 
+
  .under_header .breadcrumbs {
   display: flex;
   align-items: flex-end;
