@@ -58,74 +58,70 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтры по мороженому</h2>
         <form name = "filter" method = "get">
-          <fieldset>
-            <legend>Сортировка</legend>
-            <select class="sorting" name="sort">
-              <option value="popularities">по поулярности</option>
-              <option value="price_up">сначала недорогие</option>
-              <option value="price_down">сначала дорогие</option>
-              <option value="price_down">по жирности</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Цена: 100 руб.-500 руб.</legend>
-            <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
-          </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
-            <ul>
-              <li>
-                <label for="0">0%</label>
-                <input class="filter_input" type="radio" id="0" name="fatness" value="0">
-              </li>
-              <li>
-                <label for="less_10">до 10%</label>
-                <input class="filter_input" type="radio" id="less_10" name="fatness" value="less_10" checked>
-              </li>
-              <li>
-                <label for="less_30">до 30%</label>
-                <input class="filter_input" type="radio" id="less_30" name="fatness" value="less_30">
-              </li>
-              <li>
-                <label for="over_30">выше 30%</label>
-                <input class="filter_input" type="radio" id="over_30" name="fatness" value="over_30">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
-            <ul>
-              <li>
-                <label for="chocolate_filling">шоколадные</label>
-                <input class="filter_input" type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling" checked>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <label for="sugar_powders">сахарные присыпки</label>
-                <input class="filter_input" type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders" checked>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <label for="fruits">фрукты</label>
-                <input class="filter_input" type="checkbox" id="fruits" name="fruits" value="fruits">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <label for="syrups">сиропы</label>
-                <input class="filter_input" type="checkbox" id="syrups" name="syrups" value="syrups">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <label for="jams">джемы</label>
-                <input class="filter_input" type="checkbox" id="jams" name="jams" value="jams">
-              </li>
-            </ul>
-          </fieldset>
-          <input class="button" type="submit" value="Применить">
+          <div class="first_row">
+            <fieldset>
+              <legend>Сортировка</legend>
+                <select class="sorting" name="sort">
+                  <option value="popularities">по поулярности</option>
+                  <option value="price_up">сначала недорогие</option>
+                  <option value="price_down">сначала дорогие</option>
+                  <option value="price_down">по жирности</option>
+                </select>
+            </fieldset>
+            <fieldset>
+              <legend>Цена: 100 руб.-500 руб.</legend>
+              <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
+            </fieldset>
+            <fieldset>
+              <legend>Жирность:</legend>
+                <ul class="fatness">
+                  <li>
+                    <label for="0">0%</label>
+                    <input class="filter_input" type="radio" id="0" name="fatness" value="0">
+                  </li>
+                  <li>
+                    <label for="less_10">до 10%</label>
+                    <input class="filter_input" type="radio" id="less_10" name="fatness" value="less_10" checked>
+                  </li>
+                  <li>
+                    <label for="less_30">до 30%</label>
+                    <input class="filter_input" type="radio" id="less_30" name="fatness" value="less_30">
+                  </li>
+                  <li>
+                    <label for="over_30">выше 30%</label>
+                    <input class="filter_input" type="radio" id="over_30" name="fatness" value="over_30">
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+          <div class="second_row">
+            <fieldset>
+              <legend>Наполнители:</legend>
+                <ul class="filling">
+                  <li>
+                    <label for="chocolate_filling">шоколадные</label>
+                    <input class="filter_input" type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling" checked>
+                  </li>
+                  <li>
+                    <label for="sugar_powders">сахарные присыпки</label>
+                    <input class="filter_input" type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders" checked>
+                  </li>
+                  <li>
+                    <label for="fruits">фрукты</label>
+                    <input class="filter_input" type="checkbox" id="fruits" name="fruits" value="fruits">
+                  </li>
+                  <li>
+                    <label for="syrups">сиропы</label>
+                    <input class="filter_input" type="checkbox" id="syrups" name="syrups" value="syrups">
+                  </li>
+                  <li>
+                    <label for="jams">джемы</label>
+                    <input class="filter_input" type="checkbox" id="jams" name="jams" value="jams">
+                  </li>
+                </ul>
+            </fieldset>
+            <input class="button" type="submit" value="Применить">
+          </div>
         </form>
       </section>
       <section class="catalog">
@@ -133,109 +129,109 @@
         <ul class="catalog_list">
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <img src="img/creamy_orange_citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
             <a href="#">
-              <img src="img/creamy_orange_citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
             <p>310₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <img src="img/creamy_coffee_chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
             <a href="#">
-              <img src="img/creamy_coffee_chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
             <p>380₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
+              <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
             </a>
             <a href="#">
-              <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
+              <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
             </a>
             <p>355₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <img src="img/creamy_brulee_caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
             <a href="#">
-              <img src="img/creamy_brulee_caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
             <p>415₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное с брусничным джемом</h3>
+              <img src="img/creamy_cranberry.jpg" alt="Сливочное с брусничным джемом">
             </a>
             <a href="#">
-              <img src="img/creamy_cranberry.jpg" alt="Сливочное с брусничным джемом">
+              <h3>Сливочное с брусничным джемом</h3>
             </a>
             <p>325₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочно-черничное с цельными ягодами черники</h3>
+              <img src="img/creamy_blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
             <a href="#">
-              <img src="img/creamy_blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+              <h3>Сливочно-черничное с цельными ягодами черники</h3>
             </a>
             <p>410₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+              <img src="img/creamy_lemon_caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
             <a href="#">
-              <img src="img/creamy_lemon_caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+              <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
             <p>375₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное с шоколадной стружкой</h3>
+              <img src="img/creamy_chocolate_chips.jpg" alt="Сливочное с шоколадной стружкой">
             </a>
             <a href="#">
-              <img src="img/creamy_chocolate_chips.jpg" alt="Сливочное с шоколадной стружкой">
+              <h3>Сливочное с шоколадной стружкой</h3>
             </a>
             <p>320₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочно-ванильное с кусочками шоколада</h3>
+              <img src="img/creamy_vanilla_chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
             <a href="#">
-              <img src="img/creamy_vanilla_chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+              <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
             <p>440₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочноe с ментоловым сиропом</h3>
+              <img src="img/creamy_menthol_syrup.jpg" alt="Сливочноe с ментоловым сиропом">
             </a>
             <a href="#">
-              <img src="img/creamy_menthol_syrup.jpg" alt="Сливочноe с ментоловым сиропом">
+              <h3>Сливочноe с ментоловым сиропом</h3>
             </a>
             <p>435₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное с кусочками черного шоколада</h3>
+              <img src="img/creamy_chunks_dark_chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
             </a>
             <a href="#">
-              <img src="img/creamy_chunks_dark_chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
+              <h3>Сливочное с кусочками черного шоколада</h3>
             </a>
             <p>355₽<span>/кг</span></p>
           </li>
           <li class="catalog_item">
             <a href="#">
-              <h3>Сливочное с мятным сиропом</h3>
+              <img src="img/creamy_mint_syrup.jpg" alt="Сливочное с мятным сиропом">
             </a>
             <a href="#">
-              <img src="img/creamy_mint_syrup.jpg" alt="Сливочное с мятным сиропом">
+              <h3>Сливочное с мятным сиропом</h3>
             </a>
             <p>420₽<span>/кг</span></p>
           </li>
