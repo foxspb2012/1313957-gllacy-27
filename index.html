@@ -67,7 +67,7 @@
       </div>
         <section>
           <h2 class="visually-hidden">Карусель слайдов</h2>
-          <ul class="slides">
+          <ul class="slider">
             <li class="slide_1">
               <p>Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button" href="#">Давайте оба!</a>
@@ -81,10 +81,10 @@
               <a class="button" href="#">Давайте оба!</a>
             </li>
           </ul>
-          <div>
-            <button type="button" name = "slide_1"></button>
-            <button type="button" name = "slide_2"></button>
-            <button type="button" name = "slide_2"></button>
+          <div class="slider_dots">
+            <span class="slider_dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider_dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider_dots_item" onclick="currentSlide(3)"></span> 
           </div>
         </section>
         <section class="presents">

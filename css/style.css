@@ -36,6 +36,7 @@ html {
   visibility: hidden;
   position: absolute;
 }
+
 /* описание тега body*/
 body {
   margin: 0;
@@ -110,7 +111,7 @@ a:active {
 .footer_social ul,
 .footer_about_company ul,
 .breadcrumbs,
-.slides {
+.slider {
   list-style: none;
 }
 
@@ -205,34 +206,62 @@ a:active {
 }
 
 /* стили блока слайдов*/
-.slides {
-  background-color: #cccccc;
+.slider {
+  width: 1065px;
+  height: 885px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 57px;
+  background-color: transparent;
+  z-index: -2;
 }
 
-.slides .slide_1 {
+.slider .slide_1 {
   background-image: url('../img/ice_cream_slide_1.png');
+  background-repeat: no-repeat;
+  z-index: -1;
 }
-.slides .slide_2 {
+.slider .slide_2 {
   background-image: url('../img/ice_cream_slide_2.png');
+  background-repeat: no-repeat;
+  z-index: -1;
 }
-.slides .slide_3 {
+.slider .slide_3 {
   background-image: url('../img/ice_cream_slide_3.png');
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.slides p {
+.slider p {
   font-size: 60px;
   line-height: 60.5px;
+  vertical-align: middle;
 }
 
-.slides .button {
+.slider_dots {
+  text-align: left;
+}
+
+.slider_dots_item{
+  cursor: pointer;
+  height: 21px;
+  width: 21px;
+  margin: 0 8px 0 0;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider .button {
   text-decoration: none;
   font-size: 32px;
   line-height: 44px;
   padding: 16px 42px;
 }
 
-.slides .button:hover,
-.slides .button:focus {
+.slider .button:hover,
+.slider .button:focus {
   color: #ffffff;
 }
 
