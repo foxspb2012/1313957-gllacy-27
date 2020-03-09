@@ -133,7 +133,7 @@ a:active {
   background-color: #ededed;
 }
 
-.site_navigation .current a {
+.site_navigation .current > a {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -482,9 +482,13 @@ a:active {
   text-align: left;
 }
 
-.first_column li:first-child::before {
+.footer_about_company li:first-child::before {
+  content: '';
   position: relative;
-  content: url('../img/heart.svg');
+  left: -22px;
+  width: 15px;
+  height: 15px;
+  background: url('../img/heart.svg') no-repeat 0 0;
 }
 
 .footer_about_company li:first-child {
@@ -492,6 +496,10 @@ a:active {
   font-weight: 700;
   text-align: left;
 }
+
+.footer_about_company li:nth-child(2) {
+  margin-right: 56px;
+ }
 
 /* стили копирайта*/
 .footer_copyright a,
@@ -673,10 +681,24 @@ a:active {
 }
 
 /* Стили сеток*/
-.container {
-  width: 1200px;
+.page_wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.page_wrapper:before,
+.page_wrapper:after {
+  content: "";
+  visibility: hidden;
+}
+
+.content_wrapper {
+  min-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 .main_header {
@@ -691,6 +713,12 @@ a:active {
 .main_navigation_wrapper {
   display: flex;
   align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
 }
 
 .main_header_logo {
@@ -800,28 +828,16 @@ a:active {
   margin-right: 215px;
 }
 
-.main_footer_wrapper .footer_about_company{
-  display: flex;
-  align-content: center;
-}
-
-.footer_about_company {
-  justify-content: space-between;
+.footer_about_company{
   width: 325px;
-  padding: 36px 0 29px 0;
+  padding: 37px 0 30px 0;
   margin: 0;
 }
 
-.first_column {
-  width: 111px;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.second_column {
-  width: 162px;
+.about_company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -973,25 +989,21 @@ a:active {
   margin-bottom: 45px;
  }
 
-.raspberry .button {
-   margin-left: 354px;
- }
-
- .chocolate .button {
-  margin-left: 328px;
+.presents_button {
+   text-align: right;
  }
 
  .site_navigation .catalog_products {
   position: absolute;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
+  top: 100%;
   left: -7px;
-  display: none;
-  margin: 0;
-  padding: 0;
-  width: 143px;
-  height: 171px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
+  white-space: nowrap;
   list-style: none;
 }
 
@@ -1001,47 +1013,156 @@ a:active {
   margin-right: -7px;
 }
 
-.site_navigation > li:hover .catalog_products {
+.site_navigation > li:hover .catalog_products,
+.site_navigation > li:focus .catalog_products {
   display: block;
 }
 
 .site_navigation .catalog_products a {
+  display: block;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: #323232;
   text-align: left;
-  padding-left: 20px;
+  padding: 9px 20px;
+  padding-bottom: 9px; 
   text-decoration: none;
 }
 
+.site_navigation .catalog_products:last-child {
+  padding-bottom: 5px;
+}
+
 .site_navigation .catalog_products li:first-child a {
+  margin-right: 9px;
+  margin-left: 6px;
+  padding: 9px 14px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 700;
-}
-
-.site_navigation .catalog_products li:not(:first-child) {
-  padding-top: 9px;
-}
-
-.site_navigation .catalog_products li:last-child {
-  padding-bottom: 14px;
-}
-
-.site_navigation .catalog_products li:first-child  {
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 128px;
+  border-bottom: 1px solid #d1d0ca;
 }
 
 .site_navigation .catalog_products a:hover,
-.site_navigation .catalog_products li:hover {
+.site_navigation .catalog_products li:hover{
   background-color: #fbded8;
 }
 
+.site_navigation .catalog_products a:active,
+.site_navigation .catalog_products li:active{
+  background-color: #f6b5a5;
+}
 
+.site_navigation .current_page a {
+  color: #ffffff;
+  background-color: #d07058;
+}
 
+/* слайдер */
+.slider_dots_item {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  padding-top: 310px;
+  padding-bottom: 40px;
+}
+.slider input[type=radio] {
+  display: none;
+}
+
+#button_1:checked ~ .page_wrapper .slider #slide_1,
+#button_2:checked ~ .page_wrapper .slider #slide_2,
+#button_3:checked ~ .page_wrapper .slider #slide_3 {
+  display: block;
+}
+
+#button_1:checked ~ .page_wrapper .slider label[for="button_1"],
+#button_2:checked ~ .page_wrapper .slider label[for="button_2"],
+#button_3:checked ~ .page_wrapper .slider label[for="button_3"] {
+  background-color: #ffffff;
+}
+
+#button_1:checked ~ .page_wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/ice_cream_slide_1.png");
+}
+
+#button_2:checked ~ .page_wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/ice_cream_slide_2.png");
+}
+
+#button_3:checked ~ .page_wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/ice_cream_slide_3.png");
+}
+
+.slider_slide  .button{
+  padding: 7px 40px;
+  padding-bottom: 11px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  border-radius: 31px;
+}
+
+.slider_slides {
+  max-height: 215px;
+  overflow: hidden;
+}
+
+.slider_slide {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.slider_slide h2 {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  width: 675px;
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slider_slide:nth-child(3) h2 {
+  width: 650px;
+}
+
+.slider_dots {
+  position: absolute;
+  padding: 0 4px;
+  bottom: 62px;
+  left: 0px;
+  font-size: 0px;
+  z-index: 10;
+}
+
+.slider_dots label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider_dots label:hover {
+  background-color: #b2c1b7;
+}
+.slider_dots label:active {
+  background-color: #ffffff;
+}
 
 
 
