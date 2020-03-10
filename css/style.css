@@ -207,50 +207,96 @@ a:active {
 
 /* стили блока слайдов*/
 .slider {
-  width: 1065px;
-  height: 885px;
   position: relative;
-  margin: 0;
-  margin-bottom: 57px;
-  background-color: transparent;
-  z-index: -2;
+  padding-top: 310px;
+  padding-bottom: 40px;
 }
 
-.slider .slide_1 {
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider_dots_item {
+  display: none;
+}
+
+#button_1:checked ~ .page_wrapper {
+  background-color: #849d8f;
   background-image: url('../img/ice_cream_slide_1.png');
-  background-repeat: no-repeat;
-  z-index: -1;
 }
-.slider .slide_2 {
+#button_2:checked ~ .page_wrapper {
+  background-color: #8996a6;
   background-image: url('../img/ice_cream_slide_2.png');
-  background-repeat: no-repeat;
-  z-index: -1;
 }
-.slider .slide_3 {
+#button_3:checked ~ .page_wrapper {
+  background-color: #9d8b84;
   background-image: url('../img/ice_cream_slide_3.png');
-  background-repeat: no-repeat;
-  z-index: -1;
 }
 
-.slider p {
+#button_1 ~ .page_wrapper .slider #slide_1,
+#button_2 ~ .page_wrapper .slider #slide_2,
+#button_3 ~ .page_wrapper .slider #slide_3 {
+  display: block;
+}
+
+#button_1:checked ~ .page_wrapper .slider label[for="button_1"],
+#button_2:checked ~ .page_wrapper .slider label[for="button_2"],
+#button_3:checked ~ .page_wrapper .slider label[for="button_3"] {
+  background-color: #ffffff;
+}
+
+.slider_slides {
+  max-height: 215px;
+  overflow: hidden;
+}
+
+.slider_slide {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.slider_slide h2 {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  width: 675px;
   font-size: 60px;
-  line-height: 60.5px;
-  vertical-align: middle;
+  line-height: 60.35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slider_slide:nth-child(3) h2 {
+  width: 650px;
 }
 
 .slider_dots {
-  text-align: left;
+  position: absolute;
+  padding: 0px 2.3%;
+  bottom: 62px;
+  left: 0px;
+  font-size: 0px;
+  z-index: 100;
 }
 
-.slider_dots_item{
-  cursor: pointer;
+.slider_dots label{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
   height: 21px;
   width: 21px;
-  margin: 0 8px 0 0;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  display: inline-block;
+  cursor: pointer;
+}
+
+.slider_dots label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+.slider_dots label:active {
+  background-color: #ffffff;
 }
 
 .slider .button {
@@ -1027,7 +1073,7 @@ a:active {
   color: #323232;
   text-align: left;
   padding: 9px 20px;
-  padding-bottom: 9px; 
+  padding-bottom: 9px;
   text-decoration: none;
 }
 
@@ -1060,110 +1106,5 @@ a:active {
   color: #ffffff;
   background-color: #d07058;
 }
-
-/* слайдер */
-.slider_dots_item {
-  display: none;
-}
-
-.slider {
-  position: relative;
-  padding-top: 310px;
-  padding-bottom: 40px;
-}
-.slider input[type=radio] {
-  display: none;
-}
-
-#button_1:checked ~ .page_wrapper .slider #slide_1,
-#button_2:checked ~ .page_wrapper .slider #slide_2,
-#button_3:checked ~ .page_wrapper .slider #slide_3 {
-  display: block;
-}
-
-#button_1:checked ~ .page_wrapper .slider label[for="button_1"],
-#button_2:checked ~ .page_wrapper .slider label[for="button_2"],
-#button_3:checked ~ .page_wrapper .slider label[for="button_3"] {
-  background-color: #ffffff;
-}
-
-#button_1:checked ~ .page_wrapper {
-  background-color: #849d8f;
-  background-image: url("../img/ice_cream_slide_1.png");
-}
-
-#button_2:checked ~ .page_wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/ice_cream_slide_2.png");
-}
-
-#button_3:checked ~ .page_wrapper {
-  background-color: #9d8b84;
-  background-image: url("../img/ice_cream_slide_3.png");
-}
-
-.slider_slide  .button{
-  padding: 7px 40px;
-  padding-bottom: 11px;
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: 700;
-  border-radius: 31px;
-}
-
-.slider_slides {
-  max-height: 215px;
-  overflow: hidden;
-}
-
-.slider_slide {
-  display: none;
-  position: relative;
-  text-align: center;
-}
-
-.slider_slide h2 {
-  display: block;
-  margin: 0px auto;
-  margin-bottom: 30px;
-  width: 675px;
-  font-size: 60px;
-  line-height: 60.35px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.slider_slide:nth-child(3) h2 {
-  width: 650px;
-}
-
-.slider_dots {
-  position: absolute;
-  padding: 0 4px;
-  bottom: 62px;
-  left: 0px;
-  font-size: 0px;
-  z-index: 10;
-}
-
-.slider_dots label {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 8px;
-  width: 21px;
-  height: 21px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.slider_dots label:hover {
-  background-color: #b2c1b7;
-}
-.slider_dots label:active {
-  background-color: #ffffff;
-}
-
-
 
 
