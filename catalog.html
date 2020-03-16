@@ -11,10 +11,10 @@
     <div class="site_wrapper catalog_page">
       <header class="main_header">
         <nav class="main_navigation">
-          <div class="main_navigation_wrapper ">
-            <a class="main_header_logo" href="index.html">
-              <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
-            </a>
+          <a class="main_header_logo" href="index.html">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип компании «Глейси»">
+          </a>
+          <div class="main_navigation_wrapper catalog_navigation_wrapper">
             <ul class="site_navigation">
               <li class="navigation_item catalog_item">
                 <a class="current" href="catalog.html">
@@ -50,32 +50,92 @@
               </li>
             </ul>
             <ul class="user_navigation">
-              <li class="magnifier"><a href="#"><span>Поиск</span></a></li>
-              <li class="enter"><a href="#">Вход</a></li>
-              <li class="cart"><a href="#">Пусто</a></li>
+              <li class="magnifier">
+                <a class="magnifier_button" href="#">
+                  <span class="visually-hidden">Найти</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+                    S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+                    S11,4.019,11,6.5S8.981,11,6.5,11z"/></svg>
+                </a>
+                <ul class="magnifier_field">
+                  <li>
+                    <h2 class="visually-hidden">Поиск</h2>
+                    <form name="search" method="post" action="https://echo.htmlacademy.ru">
+                      <input type="search" name="search_text" placeholder="Крем-брюле" aria-label="Поиск по сайту">
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="login">
+                <a class="login_button" href="#">Вход</a>
+                <ul class="login_form">
+                  <li>
+                    <h2 class="visually-hidden">Личный кабинет</h2>
+                    <form name="login" method="post" action="https://echo.htmlacademy.ru">
+                      <p class="login_item">
+                        <label for="account_email" class="visually-hidden">Электронная почта</label>
+                        <input id="user_email" type="email" name="email" placeholder="email@example.com" required>
+                      </p>
+                      <p class="login_item">
+                        <label for="user_password" class="visually-hidden">Пароль</label>
+                        <input id="user_password" type="password" name="password" placeholder="••••••••" required>
+                      </p>
+                      <div class="links_wrapper">
+                        <p class="links">
+                          <a href="#" class="login_form_forgot">Забыли пароль?</a>
+                          <a href="#" class="login_form_sign_up">Новая регистрация</a>
+                        </p>
+                        <button class="button login" type="submit">Войти</button>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="cart cart_fill">
+                <a class="cart_button" href="#">2 товара</a>
+                <ul class="cart_content">
+                  <li>
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="сart_table">
+                      <li class="cart_item">
+                        <button class="delete_cart_item" type="button">Удалить</button>
+                        <a href="#">
+                          <img class="cart_item_img" src="img/creamy_orange_citrus_cart.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                          <span class="cart_item_title">Пломбир с апельсиновым джемом</span>
+                        </a>
+                        <span class="cart_item_cost">1,5 кг x <b>200 руб</b></span>
+                        <span class="cart_item_price">300 руб</span>
+                      </li>
+                      <li class="cart_item last_cart_item">
+                        <button class="delete_cart_item" type="button">Удалить</button>
+                        <a href="#">
+                          <img class="cart_item_img" src="img/creamy_strawberry_white_chocolate_cart.jpg" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+                          <span class="cart_item_title">Клубничный пломбир с присыпкой  из белого шоколада</span>
+                        </a>
+                        <span class="cart_item_cost">1,5 кг x <b>300 руб</b></span>
+                        <span class="cart_item_price">450 руб</span>
+                      </li>
+                      <li class="cart_item cart_cost">
+                        <span>Итого: 750 руб</span>
+                      </li>
+                    </ul>
+                    <a class="button cart_order_button" href="#">Оформить заказ</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
-
-        <form class="cart_filling" action="#" method="post">
-          <ul>
-            <li>
-                <button type="button"><img src="img/x.svg"></button>
-                <img src="#" alt="#">
-                <p><span></span></p>
-            </li>
-          </ul>
-          <p>Итого:</p>
-          <button type="submit">Оформить заказ</button>
-        </form>
       </header>
 
       <main class="container">
         <div class="under_header with_breadcrumbs">
           <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
+            <li class="crumb">&#187;</li>
             <li><a href="#">Каталог</a></li>
-            <li class="current"><a>Сливочное</a></li>
+            <li class="crumb">&#187;</li>
+            <li class="current_crumb"><a>Сливочное</a></li>
           </ul>
 
           <div class="schedule_phone">
@@ -270,19 +330,26 @@
         <section>
           <h2 class="visually-hidden">Переключение страниц</h2>
           <ul class="pagination_list">
-            <li><a class="current_page"><img src="img/icon_left_small.png" alt="предыдущая страница"></a></li>
-            <li><a class="pagination_item_current">1</a></li>
-            <li><a class="pagination_item" href="page_2.html">2</a></li>
-            <li><a class="pagination_item" href="page_3.html">3</a></li>
-            <li><a class="pagination_item" href="page_4.html">4</a></li>
-            <li><a class="pagination_item" href="page_5.html">5</a></li>
-            <li><a class="next_page" href="page_2.html"><img src="img/icon_right_small.png" alt="следующая страница"></a></li>
+            <li class="pagination_item">
+              <a class="prev_page disabled" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+              </a>
+            </li>
+            <li><a class="pagination_item current">1</a></li>
+            <li><a class="pagination_item" href="#">2</a></li>
+            <li><a class="pagination_item" href="#">3</a></li>
+            <li><a class="pagination_item" href="#">4</a></li>
+            <li><a class="pagination_item" href="#">5</a></li>
+            <li>
+              <a class="next_page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+              </a>
+            </li>
           </ul>
         </section>
       </main>
 
-
-      <footer class="main_footer">
+      <footer class="main_footer with_border">
         <div class="social_wrapper">
           <ul class="footer_social">
             <li class="twitter">
@@ -312,10 +379,12 @@
           </ul>
         </div>
         <div class="footer_about_company">
-            <ul class="about_company">
-              <li><a href="#">Для поставщиков</a></li>
-              <li><a href="#">Наши документы</a></li>
+            <ul class="about_company left">
+              <li><a href="#" class="bold-href">Для поставщиков</a></li>
               <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul class="about_company right">
+              <li><a href="#">Наши документы</a></li>
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
         </div>
@@ -327,4 +396,3 @@
     </div>
   </body>
 </html>
-
