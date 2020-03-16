@@ -377,7 +377,7 @@ a {
 }
 
 .login_button::before {
-  background-image: url('../img/checkbox_off.svg');
+  background-image: url('../img/enter.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -402,7 +402,7 @@ a {
 
 .login_button:focus::before,
 .login_button:hover::before {
-  background-image: url('../img/checkbox_on.svg');
+  background-image: url('../img/enter_fill.svg');
 }
 
 .cart_button:focus::before,
@@ -545,7 +545,7 @@ a {
   margin: 0;
   padding: 0;
   padding: 10px 15px;
-  width: 510px;
+  width: 540px;
   border-radius: 5px;
   list-style: none;
   font-size: 13px;
@@ -554,15 +554,15 @@ a {
   background-color: #f8f7f4;
 }
 
-.cart-content > li {
+.cart_content > li {
   display: flex;
   flex-direction: column;
 }
 
-.сart_table {
+.cart_table {
   margin: 0;
   padding: 0;
-  width: 540px;
+  width: 510px;
   min-height: 107px;
   list-style: none;
 }
@@ -945,61 +945,54 @@ a {
 
 /* стили блока SEO*/
 .seo {
-  margin-bottom: 40px;
-  padding: 21px;
-
-  background-color: #e8d7b6;
-  background-image: url('../img/waffles_fon.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 256px;
+  margin: 0px;
+  padding: 26px 21px;
   border-radius: 15px;
+  color: #323232;
+  background-color: #f1e8d5;
+  background-image: url('../img/waffles_fon.jpg');
+  background-position: top left;
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .seo_header {
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 26px;
+  margin-top: 4px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .seo_items {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   list-style: none;
 }
 
 .seo_items li {
-  width: 530px;
-  padding-left: 55px;
-}
-.seo_items li:nth-child(1),
-.seo_items li:nth-child(2){
-  padding-bottom: 28px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 2px;
 }
 
-.seo_items li:nth-child(2n) {
-  width: 562px;
-  padding-left: 91px;
-}
-
-.seo li {
-  font-family: 'Roboto';
-  font-size: 16px;
+.seo_items p {
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 56px;
+  padding-right: 10px;
   font-weight: 400;
-  text-align: left;
-  line-height: 22px;
-  color: #323232;
 }
 
-.seo h2 {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
+.two p,
+.four p {
+  padding-left: 70px;
 }
 
 .seo_items li::before {
@@ -1029,11 +1022,6 @@ a {
 .seo_items .four::before{
   left: 12px;
   background-image: url('../img/thermometer.svg');
-}
-
-.two p,
-.four p {
-  padding-left: 70px;
 }
 
 /* Блог + Подписка на рассылку */
@@ -1100,10 +1088,12 @@ a {
   color: #323232;
   background-color: #f8f7f4;
   border: 5px solid #fe9e90;
-  border-image: url('../img/post_background.png') 10 round round;
+  border-image: url('../img/post_background.png') 5 round round;
 }
 
 .subscribe_form p {
+  font-size: 16px;
+  line-height: 22px;
   margin: 38px 27px;
   color: #5a5a5a;
 }
@@ -1168,7 +1158,6 @@ a {
 .main_footer {
   width: 1146px;
   margin: 0 auto;
-  padding: 28px 0px 27px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1189,8 +1178,6 @@ a {
 .footer_social {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -1223,8 +1210,8 @@ a {
 
 .social_button {
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 32px;
+  height: 32px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -1280,6 +1267,7 @@ a {
   height: 60px;
   background-repeat: no-repeat;
   background-position: 0 0;
+  box-sizing: border-box;
 }
 
 a.bold_href {
@@ -1344,6 +1332,7 @@ a.bold_href {
   margin-right: 215px;
 
   text-align: left;
+  box-sizing: content-box;
 }
 /* стили модального окна */
 .feedback {
@@ -1532,14 +1521,12 @@ a.bold_href {
 }
 
 /* стили пагинации */
-.pagination_list{
+.pagination_list {
   margin: 0;
   padding: 0;
   padding-bottom: 31px;
   margin-right: -15px;
   height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -1647,10 +1634,14 @@ a.bold_href {
   list-style: none;
 }
 
-.catalog_item {
+.catalog_item_card {
+  position: relative;
   width: 267px;
-  margin-bottom: 40px;
-  margin-right: 26px;
+  min-height: 324px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .catalog_item:nth-child(4n) {
