@@ -119,7 +119,7 @@ a:active {
 .page_wrapper {
   background-color: #849d8f;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 83px;
 }
 
 .catalog_page{
@@ -147,8 +147,16 @@ a:active {
 }
 
 .main_navigation {
+<<<<<<< HEAD
   display: flex;
   height: 77px;
+=======
+  display: -webkit-box;
+    display: -ms-flexbox;
+      display: flex;
+  margin-bottom: 9px;
+  height: 64px;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   font-size: 16px;
   line-height: 18px;
 }
@@ -300,7 +308,15 @@ a:active {
 }
 
 .user_navigation li:not(:last-child) {
+<<<<<<< HEAD
   margin-right: 12px;
+=======
+  margin-right: 10px;
+}
+
+.user_navigation li:last-child {
+  margin-right: 27px;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 .user_navigation > li:first-child {
@@ -380,10 +396,20 @@ a:active {
   color: #323232;
  }
 
+<<<<<<< HEAD
  .magnifier_field input::placeholder {
    font-weight: 400;
    color:#999999;
  }
+=======
+.magnifier_field input::-webkit-input-placeholder,
+.magnifier_field input::-moz-placeholder,
+.magnifier_field input:-moz-placeholder,
+.magnifier_field input:-ms-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 
  .magnifier_field  input:hover {
    border: 2px solid rgba(154,154,154,0.52);
@@ -516,7 +542,14 @@ a:active {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .login_form input::placeholder {
+=======
+.login_form input::-webkit-input-placeholder,
+.login_form input::-moz-placeholder,
+.login_form input:-moz-placeholder,
+.login_form input:-ms-input-placeholder {
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   font-weight: 400;
   color:#999999;
 }
@@ -888,6 +921,13 @@ a:active {
 
 /* стили блока Подарки*/
 .presents {
+<<<<<<< HEAD
+=======
+  padding: 0;
+  padding-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -1024,6 +1064,7 @@ a:active {
   background-position: 0 0;
 }
 
+<<<<<<< HEAD
 .seo_items .one::before{
   background-image: url('../img/ice_cream.svg');
 }
@@ -1040,6 +1081,11 @@ a:active {
 .seo_items .four::before{
   left: 12px;
   background-image: url('../img/thermometer.svg');
+=======
+.subscribe_form {
+  width: 560px;
+  padding-bottom: 40px
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 /* стили блока Блог*/
@@ -1110,6 +1156,7 @@ a:active {
   padding-bottom: 2px;
 }
 
+<<<<<<< HEAD
 .subscribe_inputs .input_email {
    width: 368px;
 }
@@ -1117,6 +1164,23 @@ a:active {
 .subscribe .subscribe_text {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
+=======
+.subscribe_form input[type="email"] {
+  font: inherit;
+  line-height: 24px;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 14px;
+  width: 350px;
+}
+
+.subscribe_form input::-webkit-input-placeholder,
+.subscribe_form input::-moz-placeholder,
+.subscribe_form input:-moz-placeholder,
+.subscribe_form input:-ms-input-placeholder {
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   font-weight: 400;
   line-height: 22px;
   color: #5a5a5a;
@@ -1291,14 +1355,22 @@ a.bold_href {
   color: #323232;
 }
 
+<<<<<<< HEAD
 .contacts p:nth-child(2n) {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
+=======
+.modal_feedback input,
+.modal_feedback textarea {
+  padding: 15px;
+  font-size: inherit;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   line-height: 24px;
   color: #323232;
 }
 
+<<<<<<< HEAD
 .contacts .button {
   text-decoration: none;
   font-size: 18px;
@@ -1389,6 +1461,18 @@ a.bold_href {
 }
 
 .modal_feedback textarea::placeholder {
+=======
+.modal_feedback input::-webkit-input-placeholder,
+.modal_feedback input::-moz-placeholder,
+.modal_feedback input:-moz-placeholder,
+.modal_feedback input:-ms-input-placeholder {
+  color:#999999;
+}
+.modal_feedback textarea::-webkit-input-placeholder,
+.modal_feedback textarea::-moz-placeholder,
+.modal_feedback textarea:-moz-placeholder,
+.modal_feedback textarea:-ms-input-placeholder {
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   color:#999999;
 }
 
@@ -1398,9 +1482,15 @@ a.bold_href {
   border: 2px solid #c7c6c5;
 }
 
+<<<<<<< HEAD
 .modal_feedback  input[type="text"],
 .modal_feedback  input[type="email"] {
  width: 267px;
+=======
+.modal_feedback input[type="text"],
+.modal_feedback input[type="email"] {
+  width: 267px;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 .modal_feedback textarea {
@@ -1410,8 +1500,14 @@ a.bold_href {
 }
 
 .feedback_submit {
+<<<<<<< HEAD
  align-self: flex-end;
  padding: 14px 24px;
+=======
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px 25px;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 .button.feedback_submit {
@@ -1687,7 +1783,66 @@ a.bold_href {
   font-size: 16px;
   line-height: 18px;
   color: #323232;
+<<<<<<< HEAD
   background-color: #ffffff;
+=======
+  background-color: #f8f7f4;
+}
+
+.modal_feedback {
+  top: 337px;
+  left: 50%;
+  margin-left: -235px;
+  width: 478px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.modal_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal_close::before,
+.modal_close::after{
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 3px;
+  background-color: #231f20;
+}
+
+.modal_close::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+}
+
+.modal_close::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal_dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 .pagination_list .pagination_item {
