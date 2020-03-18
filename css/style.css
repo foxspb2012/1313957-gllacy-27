@@ -60,7 +60,7 @@ a {
 .page_wrapper {
   background-color: #849d8f;
   background-repeat: no-repeat;
-  background-position: center 83px;
+  background-position: center top;
 }
 
 .catalog_page {
@@ -95,7 +95,7 @@ a {
     display: -ms-flexbox;
       display: flex;
   margin-bottom: 9px;
-  height: 64px;
+  height: 77px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -259,7 +259,7 @@ a {
   margin-right: 10px;
 }
 
-.user_navigation li:last-child {
+.user_navigation > li:last-child {
   margin-right: 27px;
 }
 
@@ -340,9 +340,18 @@ a {
   color: #323232;
 }
 
-.magnifier_field input::-webkit-input-placeholder,
-.magnifier_field input::-moz-placeholder,
-.magnifier_field input:-moz-placeholder,
+.magnifier_field input::-webkit-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.magnifier_field input::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.magnifier_field input:-moz-placeholder{
+  font-weight: 400;
+  color:#999999;
+}
 .magnifier_field input:-ms-input-placeholder {
   font-weight: 400;
   color:#999999;
@@ -478,9 +487,18 @@ a {
   border-radius: 5px;
 }
 
-.login_form input::-webkit-input-placeholder,
-.login_form input::-moz-placeholder,
-.login_form input:-moz-placeholder,
+.login_form input::-webkit-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.login_form input::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.login_form input:-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
 .login_form input:-ms-input-placeholder {
   font-weight: 400;
   color:#999999;
@@ -807,7 +825,7 @@ a {
 .slide_title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -815,7 +833,7 @@ a {
 
 .slider_dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -919,7 +937,6 @@ a {
 /* стили блока Подарки*/
 .presents {
   padding: 0;
-  padding-top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,7 +1068,7 @@ a {
 
 .subscribe_form {
   width: 560px;
-  padding-bottom: 40px
+  padding-bottom: 35px
 }
 
 /* стили блока Блог*/
@@ -1125,12 +1142,21 @@ a {
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding: 14px;
-  width: 350px;
+  width: 368px;
 }
 
-.subscribe_form input::-webkit-input-placeholder,
-.subscribe_form input::-moz-placeholder,
-.subscribe_form input:-moz-placeholder,
+.subscribe_form input::-webkit-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.subscribe_form input::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.subscribe_form input:-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
 .subscribe_form input:-ms-input-placeholder {
   font-weight: 400;
   color:#999999;
@@ -1356,7 +1382,7 @@ a.bold_href {
 .modal_feedback input,
 .modal_feedback textarea {
   padding: 15px;
-  font-size: inherit;
+  font: inherit;
   line-height: 24px;
   color: #323232;
   background-color: #ffffff;
@@ -1364,21 +1390,49 @@ a.bold_href {
   border-radius: 10px;
 }
 
-.modal_feedback input::-webkit-input-placeholder,
-.modal_feedback input::-moz-placeholder,
-.modal_feedback input:-moz-placeholder,
-.modal_feedback input:-ms-input-placeholder {
+.modal_feedback input::-webkit-input-placeholder {
+  font-weight: 400;
   color:#999999;
 }
-.modal_feedback textarea::-webkit-input-placeholder,
-.modal_feedback textarea::-moz-placeholder,
-.modal_feedback textarea:-moz-placeholder,
+.modal_feedback input::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.modal_feedback input:-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.modal_feedback input:-ms-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+
+.modal_feedback textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.modal_feedback textarea::-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
+.modal_feedback textarea:-moz-placeholder {
+  font-weight: 400;
+  color:#999999;
+}
 .modal_feedback textarea:-ms-input-placeholder {
+  font-weight: 400;
   color:#999999;
 }
 
 .modal_feedback input:focus,
 .modal_feedback textarea:focus {
+  color: #323232;
+  padding: 14px;
+  border: 2px solid #c7c6c5;
+}
+
+.modal_feedback input:hover,
+.modal_feedback textarea:hover {
   color: #323232;
   padding: 14px;
   border: 2px solid #c7c6c5;
@@ -1398,7 +1452,9 @@ a.bold_href {
 .feedback_submit {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 10px 25px;
+  padding: 13px 24px;
+  font: inherit;
+  font-size: 18px;
 }
 
 .modal_feedback h2 {
@@ -1946,7 +2002,6 @@ a.bold_href {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-}
 }
 
 .modal_close::after {
