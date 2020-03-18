@@ -156,6 +156,9 @@ a:active {
       display: flex;
   margin-bottom: 9px;
   height: 64px;
+<<<<<<< HEAD
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
+=======
 >>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   font-size: 16px;
   line-height: 18px;
@@ -397,11 +400,14 @@ a:active {
  }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  .magnifier_field input::placeholder {
    font-weight: 400;
    color:#999999;
  }
 =======
+=======
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 .magnifier_field input::-webkit-input-placeholder,
 .magnifier_field input::-moz-placeholder,
 .magnifier_field input:-moz-placeholder,
@@ -543,8 +549,11 @@ a:active {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .login_form input::placeholder {
 =======
+=======
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 .login_form input::-webkit-input-placeholder,
 .login_form input::-moz-placeholder,
 .login_form input:-moz-placeholder,
@@ -1085,6 +1094,9 @@ a:active {
 .subscribe_form {
   width: 560px;
   padding-bottom: 40px
+<<<<<<< HEAD
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
+=======
 >>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
@@ -1365,11 +1377,15 @@ a.bold_href {
 .modal_feedback textarea {
   padding: 15px;
   font-size: inherit;
+<<<<<<< HEAD
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
+=======
 >>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   line-height: 24px;
   color: #323232;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .contacts .button {
   text-decoration: none;
@@ -1462,6 +1478,8 @@ a.bold_href {
 
 .modal_feedback textarea::placeholder {
 =======
+=======
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 .modal_feedback input::-webkit-input-placeholder,
 .modal_feedback input::-moz-placeholder,
 .modal_feedback input:-moz-placeholder,
@@ -1472,6 +1490,9 @@ a.bold_href {
 .modal_feedback textarea::-moz-placeholder,
 .modal_feedback textarea:-moz-placeholder,
 .modal_feedback textarea:-ms-input-placeholder {
+<<<<<<< HEAD
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
+=======
 >>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
   color:#999999;
 }
@@ -1479,6 +1500,7 @@ a.bold_href {
 .modal_feedback input:focus,
 .modal_feedback textarea:focus {
   color: #323232;
+<<<<<<< HEAD
   border: 2px solid #c7c6c5;
 }
 
@@ -1487,6 +1509,12 @@ a.bold_href {
 .modal_feedback  input[type="email"] {
  width: 267px;
 =======
+=======
+  padding: 14px;
+  border: 2px solid #c7c6c5;
+}
+
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 .modal_feedback input[type="text"],
 .modal_feedback input[type="email"] {
   width: 267px;
@@ -1560,9 +1588,16 @@ a.bold_href {
  margin-left: auto;
  padding: 0;
 
+<<<<<<< HEAD
  font-family: 'Roboto', Arial, sans-serif;
  font-weight: 700;
  text-align: right;
+=======
+.feedback_submit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px 25px;
+>>>>>>> parent of 55fcbb0... Личный проект: начинаем оформление декоративных элементов
 }
 
 .under_header .schedule_phone p {
