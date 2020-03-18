@@ -140,56 +140,60 @@
             <div class="raspberry">
               <h3>Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <div class="presents_button">
-                <a class="button" href="#">Хочу варенье!</a>
-              </div>
+              <a class="button" href="#">Хочу варенье!</a>
             </div>
             <div class="chocolate">
               <h3>Шоколадки даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <div class="presents_button">
-                <a class="button" href="#">Хочу шоколадки!</a>
-              </div>
+              <a class="button" href="#">Хочу шоколадки!</a>
             </div>
           </section>
-          <section>
+          <section class="hits">
             <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="catalog_list">
               <li class="catalog_item_card best_offer">
-                <a href="#">
-                  <img src="img/creamy_orange_citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                </a>
-                <a class="description" href="#">
-                  <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                </a>
-                <p>310₽<span>/кг</span></p>
+                <img class="catalog_item_img" src="img/creamy_orange_citrus.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <p class="price">
+                  <span class="value">310</span>
+                  <span class="weight">/кг</span>
+                </p>
+                <p class="description">
+                  <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </p>
+                <button type="button" class="button fast_view" name="fast_view"> Быстрый просмотр</button>
               </li>
               <li class="catalog_item_card best_offer">
-                <a href="#">
-                  <img src="img/creamy_coffee_chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                </a>
-                <a class="description" href="#">
-                  <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                </a>
-                <p>380₽<span>/кг</span></p>
+                <img class="catalog_item_img" src="img/creamy_coffee_chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <p class="price">
+                  <span class="value">380</span>
+                  <span class="weight">/кг</span>
+                </p>
+                <p class="description">
+                  <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                </p>
+                <button type="button" class="button fast_view" name="fast_view"> Быстрый просмотр</button>
               </li>
               <li class="catalog_item_card best_offer">
-                <a href="#">
-                  <img src="img/creamy_strawberry_white_chocolate.jpg" alt="Сливочно-клубничное с присыпками из белого шоколада">
-                </a>
-                <a class="description" href="#">
-                  <h3>Сливочно-клубничное с присыпками из белого шоколада</h3>
-                </a>
-                <p>355₽<span>/кг</span></p>
+                <img class="catalog_item_img" src="img/creamy_strawberry_white_chocolate.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпками из белого шоколада">
+                <p class="price">
+                  <span class="value">355</span>
+                  <span class="weight">/кг</span>
+                </p>
+                <p class="description">
+                  <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </p>
+                <button type="button" class="button fast_view" name="fast_view"> Быстрый просмотр</button>
               </li>
               <li class="catalog_item_card best_offer">
-                <a class="description" href="#">
-                  <img src="img/creamy_brulee_caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
-                </a>
-                <a href="#">
-                  <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-                </a>
-                <p>415₽<span>/кг</span></p>
+                <img class="catalog_item_img" src="img/creamy_brulee_caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <p class="price">
+                  <span class="value">415</span>
+                  <span class="weight">/кг</span>
+                </p>
+                <p class="description">
+                  <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                </p>
+                <button type="button" class="button fast_view" name="fast_view"> Быстрый просмотр</button>
               </li>
             </ul>
           </section>
@@ -294,7 +298,7 @@
           </div>
           <div class="footer_copyright">
             <img class="logo_htmlacademy" src="img/logo_htmlacademy_small.svg" width="108" height="39" alt="Логотип HTML-Academy">
-            <p>Сделано в <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss/">HTML-Academy</a>© 2020</p>
+            <p>Сделано в <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss/">HTML Academy</a> © 2020</p>
           </div>
         </footer>
     </div>
@@ -312,7 +316,7 @@
               <input id="field_email" type="email" name="email" placeholder="email@example.com" required>
             </p>
             <label for="field_message" class="visually-hidden">Введите текст сообщения</label>
-            <textarea id="field_message" name="text_message" id="" cols="80" rows="8" placeholder="В свободной форме"></textarea>
+            <textarea id="field_message" name="text_message" id="" cols="43" rows="5" placeholder="В свободной форме"></textarea>
             <button class="button feedback_submit" type="submit">Отправить</button>
         </form>
         <button class="modal_close" type="button">Закрыть</button>
