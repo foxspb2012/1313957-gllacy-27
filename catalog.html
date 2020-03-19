@@ -155,72 +155,91 @@
         </div>
 
         <h1>Сливочное мороженое</h1>
-        <section class="filter">
-          <h2 class="visually-hidden">Фильтры по мороженому</h2>
-          <form name = "filter" method = "get">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтры поиска</h2>
+          <form name="filters" method="post" action="https://echo.htmlacademy.ru">
             <div class="first_row">
-              <fieldset>
+              <fieldset class="sotring">
                 <legend>Сортировка</legend>
-                  <select class="sorting" name="sort">
-                    <option value="popularities">по поулярности</option>
+                <div class="filters_background select">
+                  <select class="filters_sorting" id="filters_sorting" name="filters_sorting">
+                    <option value="popularities">по популярности</option>
                     <option value="price_up">сначала недорогие</option>
                     <option value="price_down">сначала дорогие</option>
-                    <option value="price_down">по жирности</option>
+                    <option value="fatness">по жирности</option>
                   </select>
+                  <svg class="icon_down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ffffff" d="M5.5 10L0 0h11"/></svg>
+                </div>
               </fieldset>
-              <fieldset>
-                <legend>Цена: 100 руб.-500 руб.</legend>
-                <input type="range" name="price_select" id="price_select" min="100" max="500" step="5">
+              <fieldset class="price_line">
+                <legend class="price_controls">
+                  <span class="price_label">Цена:</span>
+                    <label class="min_price"><input type="text" name="min_price" value="100 руб."></label>
+                    <label class="max_price"><input type="text" name="max_price" value="500 руб."></label>
+                </legend>
+                <div class="filters_background">
+                  <div class="range_controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range_toggle range_toggle_min"></div>
+                    <div class="range_toggle range_toggle_max"></div>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="fatness_level">
                 <legend>Жирность:</legend>
-                  <ul class="fatness">
-                    <li>
-                      <label for="0">0%</label>
-                      <input class="filter_input" type="radio" id="0" name="fatness" value="0">
+                <div class="filters_background">
+                  <ul>
+                    <li class="filter_option">
+                      <input class="radio_filter" type="radio" id="fat_0" name="filters_fat" value="0">
+                      <label for="fat_0" tabindex="0">0%</label>
                     </li>
-                    <li>
-                      <label for="less_10">до 10%</label>
-                      <input class="filter_input" type="radio" id="less_10" name="fatness" value="less_10" checked>
+                    <li class="filter_option">
+                      <input class="radio_filter" type="radio" id="less_10" name="filters_fat" value="less_10" checked>
+                      <label for="less_10" tabindex="0">до 10%</label>
                     </li>
-                    <li>
-                      <label for="less_30">до 30%</label>
-                      <input class="filter_input" type="radio" id="less_30" name="fatness" value="less_30">
+                    <li class="filter_option">
+                      <input class="radio_filter" type="radio" id="less_30" name="filters_fat" value="less_30">
+                      <label for="less_30" tabindex="0">до 30%</label>
                     </li>
-                    <li>
-                      <label for="over_30">выше 30%</label>
-                      <input class="filter_input" type="radio" id="over_30" name="fatness" value="over_30">
+                    <li class="filter_option">
+                      <input class="radio_filter" type="radio" id="over_30" name="filters_fat" value="over_30">
+                      <label for="over_30" tabindex="0">выше 30%</label>
                     </li>
                   </ul>
+                </div>
               </fieldset>
             </div>
             <div class="second_row">
-              <fieldset>
-                <legend>Наполнители:</legend>
-                  <ul class="filling">
-                    <li>
-                      <label for="chocolate_filling">шоколадные</label>
-                      <input class="filter_input" type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate_filling" checked>
+              <fieldset class="fillers">
+                <legend>Наполнители</legend>
+                <div class="filters_background">
+                  <ul>
+                    <li class="filter_option checklist">
+                      <label for="chocolate_filling" tabindex="0">шоколадные</label>
+                      <input class="checkbox_filter" type="checkbox" id="chocolate_filling" name="chocolate_filling" value="chocolate" checked>
                     </li>
-                    <li>
-                      <label for="sugar_powders">сахарные присыпки</label>
-                      <input class="filter_input" type="checkbox" id="sugar_powders" name="sugar_powders" value="sugar_powders" checked>
+                    <li class="filter_option checklist">
+                      <label for="sugar_powders" tabindex="0">сахарные присыпки</label>
+                      <input class="checkbox_filter" type="checkbox" id="sugar_powders" name="sugar_powders" value="shugar" checked>
                     </li>
-                    <li>
-                      <label for="fruits">фрукты</label>
-                      <input class="filter_input" type="checkbox" id="fruits" name="fruits" value="fruits">
+                    <li class="filter_option checklist">
+                      <label for="fruits" tabindex="0">фрукты</label>
+                      <input class="checkbox_filter" type="checkbox" id="fruits" name="fruits" value="fruit">
                     </li>
-                    <li>
-                      <label for="syrups">сиропы</label>
-                      <input class="filter_input" type="checkbox" id="syrups" name="syrups" value="syrups">
+                    <li class="filter_option checklist">
+                      <label for="syrups" tabindex="0">сиропы</label>
+                      <input class="checkbox_filter" type="checkbox" id="syrups" name="syrups" value="syrup">
                     </li>
-                    <li>
-                      <label for="jams">джемы</label>
-                      <input class="filter_input" type="checkbox" id="jams" name="jams" value="jams">
+                    <li class="filter_option checklist">
+                      <label for="jams" tabindex="0">джемы</label>
+                      <input class="checkbox_filter" type="checkbox" id="jams" name="jams" value="jam">
                     </li>
                   </ul>
+                </div>
               </fieldset>
-              <input class="button" type="submit" value="Применить">
+              <button class="filters_submit" type="submit"> Применить</button>
             </div>
           </form>
         </section>
