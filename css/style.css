@@ -1165,13 +1165,11 @@ a {
 .subscribe_form input[type="email"]:focus {
   border: 2px solid rgba(46,136,228,0.52);
   padding: 13px;
-  color: #999999;
 }
 
 .subscribe_form input[type="email"]:hover {
   border: 2px solid rgba(154,154,154,0.52);
   padding: 13px;
-  color: #999999;
 }
 
 .subscribe_button {
