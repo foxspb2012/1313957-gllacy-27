@@ -94,7 +94,7 @@ a {
   display: -webkit-box;
     display: -ms-flexbox;
       display: flex;
-  margin-bottom: 9px;
+  margin-bottom: -6px;
   height: 77px;
   font-size: 16px;
   line-height: 18px;
@@ -270,7 +270,7 @@ a {
 .magnifier_button,
 .login_button,
 .cart_button {
-  padding: 8px 35px;
+  padding: 9px 35px;
   border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
@@ -297,7 +297,7 @@ a {
 }
 
 .magnifier a {
-  padding: 7px 7px 7px 7px;
+  padding: 7px 9px 7px 7px;
   border-radius: 50%;
 }
 
@@ -802,9 +802,12 @@ a {
   margin-top: 2px;
 }
 
+/*
 .under_header.with_breadcrumbs {
   margin-bottom: 10px;
 }
+*/
+
 /* стили блока слайдов*/
 .slider {
   width: 1105px;
@@ -1006,6 +1009,8 @@ a {
 }
 
 .description a {
+  font-weight: 500;
+  line-height: 22px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1559,8 +1564,9 @@ a.bold_href {
 /* стили страницы catalog.html*/
 /* стили навигации внутренней страницы*/
 .breadcrumbs {
+  font-weight: 400;
   margin: 0;
-  margin-top: 28px;
+  margin-top: 25px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1623,7 +1629,7 @@ a.bold_href {
 
 .filters_sorting {
   padding-top: 4px;
-  padding-right: 25px;
+  padding-right: 32px;
   padding-bottom: 4px;
   padding-left: 16px;
   font-weight: 500;
@@ -1748,7 +1754,7 @@ a.bold_href {
 
 .scale {
   width: 178px;
-  height: 4px;
+  height: 5px;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -1761,17 +1767,17 @@ a.bold_href {
 
 .range_toggle {
   position: absolute;
-  top: -10px;
+  top: -9px;
   width: 4px;
   height: 4px;
   background: #ababab;
-  border: 10px solid #ffffff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .range_toggle_min {
-  left: 17px;
+  left: 15px;
 }
 
 .range_toggle_max {
@@ -1795,7 +1801,7 @@ a.bold_href {
   display: inline-block;
   vertical-align: top;
   padding-left: 33px;
-  padding-right: 14px;
+  padding-right: 12px;
 }
 
 .filter_option label {
@@ -1846,7 +1852,7 @@ a.bold_href {
 }
 
 .fillers .filters_background {
-  padding: 9px 20px 8px 16px;
+  padding: 9px 0px 8px 16px;
 }
 
 .checklist {
@@ -1896,7 +1902,7 @@ a.bold_href {
 .filters_submit {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 8px 28px;
+  padding: 8px 26px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   color: #ffffff;
@@ -2113,7 +2119,7 @@ a.bold_href {
   position: relative;
   width: 267px;
   min-height: 324px;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2141,7 +2147,7 @@ a.bold_href {
 .price {
   position: absolute;
   margin: 0;
-  bottom: 66px;
+  bottom: 65px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
