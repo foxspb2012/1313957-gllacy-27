@@ -1584,6 +1584,7 @@ a.bold_href {
 /* фильтры */
 .filters {
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .filters fieldset {
@@ -1617,7 +1618,7 @@ a.bold_href {
   color:#999999;
 }
 .filters input:-ms-input-placeholder {
-    color:#999999;
+  color:#999999;
 }
 
 .filters_sorting {
@@ -1668,7 +1669,9 @@ a.bold_href {
   display: inline-block;
   vertical-align: top;
   padding-top: 5px;
+  padding-right: 0px;
   padding-bottom: 6px;
+  padding-left: 0px;
 }
 
 .icon_down {
@@ -1861,8 +1864,8 @@ a.bold_href {
   position: absolute;
   left: -32px;
   top: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 3px;
 }
