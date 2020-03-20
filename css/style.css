@@ -959,7 +959,7 @@ a {
           flex-direction: column;
   width: 560px;
   min-height: 206px;
-  padding: 14px 20px;
+  padding: 16px 20px;
   border-radius: 15px;
   font-size: 18px;
   line-height: 22px;
@@ -2008,7 +2008,7 @@ a.bold_href {
 .seo_items li {
   position: relative;
   width: 50%;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .seo_items p {
