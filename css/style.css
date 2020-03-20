@@ -753,7 +753,7 @@ a {
 
 /* информация для пользователей */
 .information {
-  margin-bottom: 30px;
+  margin-bottom: 41px;
 }
 
 .under_header {
@@ -888,7 +888,7 @@ a {
 }
 
 .slide_button {
-  padding: 16px 42px;
+  padding: 12px 42px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -959,7 +959,7 @@ a {
           flex-direction: column;
   width: 560px;
   min-height: 206px;
-  padding: 23px 20px;
+  padding: 14px 20px;
   border-radius: 15px;
   font-size: 18px;
   line-height: 22px;
@@ -968,7 +968,7 @@ a {
 
 .presents h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -999,7 +999,10 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 45px;
-  padding: 14px 22px;
+  margin-bottom: 6px;
+  padding: 10px 22px;
+  padding: 12px 22px;
+
 }
 
 /* ссылки в хитах продаж*/
@@ -1054,7 +1057,7 @@ a {
 /* Блог + Подписка на рассылку */
 .blogs_subscribe {
   padding: 0;
-  margin: 40px 0px;
+  margin: 36px 0px;
   min-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1076,7 @@ a {
 
 .subscribe_form {
   width: 560px;
-  padding-bottom: 35px
+  padding-bottom: 30px
 }
 
 /* стили блока Блог*/
@@ -1090,7 +1093,7 @@ a {
 .blogs h3 {
   font-weight: 500;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 23px;
   margin-left: 20px;
   font-size: 16px;
   line-height: 22px;
@@ -1098,9 +1101,9 @@ a {
 
 .information_blog {
   display: block;
-  width: 279px;
+  width: 281px;
   margin-left: 20px;
-  margin-top: 13px;
+  margin-top: 4px;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -1127,6 +1130,7 @@ a {
 
 .subscribe_form p {
   font-weight: 400;
+  line-height: 22px;
   margin-top: 33px;
   margin-right: 22px;
   margin-bottom: 38px;
@@ -1136,7 +1140,7 @@ a {
 
 .subscribe_form form {
   margin-left: 21px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .subscribe_form input[type="email"] {
@@ -1181,7 +1185,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 14px 19px;
+  padding: 14px 16px;
   margin-left: 11px;
 }
 
@@ -1219,7 +1223,7 @@ a {
   top: 63px;
   right: 27px;
   width: 302px;
-  padding-top: 32px;
+  padding-top: 29px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 15px;
@@ -1235,23 +1239,24 @@ a {
 }
 
 .map_legend_contacts {
-  margin: 0;
-  margin-top: 23px;
-  padding: 0;
   font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
 }
 
 .map_legend strong {
   display: block;
-  margin-top: 9px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .feedback_form_button {
-  margin-top: 26px;
+  margin-top: 25px;
   margin-bottom: 31px;
-  padding: 13px 27px;
+  padding: 10px 27px;
   font-size: 18px;
   line-height: 24px;
 }
