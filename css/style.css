@@ -576,7 +576,7 @@ a {
 
 /* корзина */
 .cart {
-  padding-top: 16px;
+  padding-top: 13px;
   padding-bottom: 12px;
 }
 
@@ -744,7 +744,7 @@ a {
 }
 
 .container h1 {
-  margin-top: 2px;
+  margin-top: -9px;
   margin-bottom: 26px;
   padding: 0;
   font-size: 35px;
@@ -778,6 +778,12 @@ a {
   color: #ffbc9e;
 }
 
+.no_breadcrumbs {
+  -webkit-box-pack: end;
+    -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
 .schedule_phone a {
   font-size: 22px;
   line-height: 24px;
@@ -789,7 +795,7 @@ a {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .breadcrumbs  .schedule_phone p {
@@ -798,21 +804,9 @@ a {
   padding-left: 16px;
 }
 
-.no_breadcrumbs {
-  -webkit-box-pack: end;
-    -ms-flex-pack: end;
-      justify-content: flex-end;
+.breadcrumbs .schedule_phone {
+  margin-top: -8px;
 }
-
- .schedule_phone {
-  margin-top: 3px;
-}
-
-/*
-.under_header.with_breadcrumbs {
-  margin-bottom: 10px;
-}
-*/
 
 /* стили блока слайдов*/
 .slider {
@@ -1216,6 +1210,7 @@ a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .pin {
@@ -1224,10 +1219,11 @@ a {
   left: 266px;
 }
 
-.map_interactive {
-  width: 100%;
-  position:relative;
-  overflow:hidden;
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 .map_legend {
@@ -1586,7 +1582,7 @@ a.bold_href {
 .breadcrumbs {
   font-weight: 400;
   margin: 1;
-  margin-top: 26px;
+  margin-top: 28px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,7 +1611,7 @@ a.bold_href {
 
 .filters fieldset {
   margin: 0;
-  margin-right: 16px;
+  margin-right: 15px;
   padding: 0;
   border: none;
 }
@@ -1923,7 +1919,7 @@ a.bold_href {
 .filters_submit {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 7px 28px;
+  padding: 7px 29px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   color: #ffffff;
@@ -2141,7 +2137,7 @@ a.bold_href {
   position: relative;
   width: 267px;
   min-height: 324px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
