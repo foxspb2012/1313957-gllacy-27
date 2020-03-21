@@ -225,7 +225,7 @@ a {
 
 .subnavigation_item .current {
   color: #ffffff;
-  background-color: rgb(208, 112, 88);
+  background-color: #d07058;
 }
 
 .subnavigation_item a:hover,
@@ -270,7 +270,7 @@ a {
 .magnifier_button,
 .login_button,
 .cart_button {
-  padding: 9px 35px;
+  padding: 8px 35px;
   border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
@@ -348,7 +348,7 @@ a {
   font-weight: 400;
   color:#999999;
 }
-.magnifier_field input:-moz-placeholder{
+.magnifier_field input:-moz-placeholder {
   font-weight: 400;
   color:#999999;
 }
@@ -364,7 +364,7 @@ a {
 }
 
 .magnifier_field  input:focus {
-  border: 2px solid rgba(46,136,228,0.52);
+  border: 2px solid rgba(46, 136, 228, 0.52);
   padding: 14px;
   color:  #323232;
 }
@@ -377,7 +377,7 @@ a {
  /* вход */
 .login {
   position: relative;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 12px;
 }
 
@@ -400,7 +400,7 @@ a {
 .cart_button::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 15px;
   width: 21px;
   height: 21px;
@@ -424,7 +424,7 @@ a {
 
 .cart_fill .cart_button::before {
   padding-top: 16px;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   background-image: url('../img/cart_fill.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -505,13 +505,13 @@ a {
 }
 
 .login_form input:focus {
-  border: 2px solid  rgba(46,136,228,0.52);
+  border: 2px solid  rgba(46, 136, 228, 0.52);
   padding: 14px;
   color: #323232;
 }
 
 .login_form input:hover {
-  border: 2px solid rgba(154,154,154,0.52);
+  border: 2px solid rgba(154 ,154, 154, 0.52);
   padding: 14px;
   color: #323232;
 }
@@ -745,7 +745,7 @@ a {
 
 .container h1 {
   margin-top: 2px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -790,6 +790,12 @@ a {
   margin-bottom: 8px;
   padding: 0;
   padding-left: 14px;
+}
+
+.breadcrumbs  .schedule_phone p {
+  margin-top: 2px;
+  margin-bottom: 6px;
+  padding-left: 16px;
 }
 
 .no_breadcrumbs {
@@ -859,7 +865,7 @@ a {
 }
 
 .slider_dots label:hover {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #button_1:checked ~ .page_wrapper .slider #slide_1,
@@ -1172,12 +1178,12 @@ a {
 }
 
 .subscribe_form input[type="email"]:focus {
-  border: 2px solid rgba(46,136,228,0.52);
+  border: 2px solid rgba(46, 136, 228, 0.52);
   padding: 11px;
 }
 
 .subscribe_form input[type="email"]:hover {
-  border: 2px solid rgba(154,154,154,0.52);
+  border: 2px solid rgba(154, 154, 154, 0.52);
   padding: 11px;
 }
 
@@ -1216,6 +1222,12 @@ a {
   position: absolute;
   top: 139px;
   left: 266px;
+}
+
+.map_interactive {
+  width: 100%;
+  position:relative;
+  overflow:hidden;
 }
 
 .map_legend {
@@ -1306,7 +1318,7 @@ a {
   display: -ms-flexbox;
         display: flex;
   width: 345px;
-  margin-top: -10px;
+  margin-top: -6px;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -1573,8 +1585,8 @@ a.bold_href {
 /* стили навигации внутренней страницы*/
 .breadcrumbs {
   font-weight: 400;
-  margin: 0;
-  margin-top: 25px;
+  margin: 1;
+  margin-top: 26px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1603,7 +1615,7 @@ a.bold_href {
 
 .filters fieldset {
   margin: 0;
-  margin-right: 14px;
+  margin-right: 16px;
   padding: 0;
   border: none;
 }
@@ -1745,6 +1757,7 @@ a.bold_href {
 .price_line {
   position: relative;
   width: 220px;
+  margin-right: 13px;
 }
 
 .price_line .filters_background {
@@ -1860,12 +1873,12 @@ a.bold_href {
 }
 
 .fillers .filters_background {
-  padding: 9px 0px 8px 16px;
+  padding: 8px 0px 8px 16px;
 }
 
 .checklist {
-  padding-right: 20px;
-  padding-left: 30px;
+  padding-right: 17px;
+  padding-left: 32px;
 }
 
 .checklist input,
@@ -1910,7 +1923,7 @@ a.bold_href {
 .filters_submit {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 8px 26px;
+  padding: 7px 28px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   color: #ffffff;
@@ -1937,8 +1950,8 @@ a.bold_href {
 .pagination_list {
   margin: 0;
   padding: 0;
-  margin-bottom: 36px;
-  margin-right: -15px;
+  margin-bottom: 34px;
+  margin-right: -13px;
   height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2058,7 +2071,7 @@ a.bold_href {
 .footer_copyright {
   width: 215px;
   margin-right: -27px;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 .footer_copyright p {
@@ -2101,7 +2114,8 @@ a.bold_href {
 
 .fatness_level .filters_background {
   padding: 10px;
-  padding-left: 14px;
+  padding-right: 5px;
+  padding-left: 16px;
 }
 
 /* стили списка сливочного мороженого*/
@@ -2120,7 +2134,7 @@ a.bold_href {
 }
 
 .ice_cream_list {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .catalog_item_card {
@@ -2284,7 +2298,7 @@ a.bold_href {
 }
 
 .modal_close::before,
-.modal_close::after{
+.modal_close::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -2313,19 +2327,157 @@ a.bold_href {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* задел на будущее*/
+/*  анимация на JS */
 .show_modal {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.8s;
+          animation: bounce 0.8s;
 }
 
 .error_modal {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.8s;
+          animation: shake 0.8s;
 }
 
 .visible {
   display: block;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  60% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  60% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  30% {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+  }
+  50% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  70% {
+    -webkit-transform: translateX(-12px);
+            transform: translateX(-12px);
+  }
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20% {
+    -webkit-transform: translateX(18px);
+            transform: translateX(18px);
+  }
+  40% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  60% {
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake{
+  0%,
+  100%{
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  30% {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+  }
+  50% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  70% {
+    -webkit-transform: translateX(-12px);
+            transform: translateX(-12px);
+  }
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20% {
+    -webkit-transform: translateX(18px);
+            transform: translateX(18px);
+  }
+  40% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  60% {
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
