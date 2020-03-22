@@ -423,7 +423,7 @@ a {
 }
 
 .empty_cart .cart_button{
-  padding-right: 17px;
+  padding-right: 16px;
 }
 
 .cart_fill .cart_button::before {
@@ -1150,7 +1150,7 @@ a {
 
 .subscribe_form form {
   margin-left: 21px;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .subscribe_form input[type="email"] {
@@ -1160,7 +1160,7 @@ a {
   background-color: #ffffff;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
-  padding: 10px;
+  padding: 13px;
   width: 368px;
 }
 
@@ -1183,12 +1183,12 @@ a {
 
 .subscribe_form input[type="email"]:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
-  padding: 9px;
+  padding: 12px;
 }
 
 .subscribe_form input[type="email"]:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
-  padding: 9px;
+  padding: 12px;
 }
 
 .subscribe_button {
@@ -1196,13 +1196,13 @@ a {
   font-weight: 700;
   line-height: 24px;
   padding: 11px 17px;
+  margin-top: 2px;
   margin-left: 10px;
 }
 
 /* карта */
 .map {
   height: 430px;
-  width: 100%;
   margin: 0 -27px;
   display: -webkit-box;
   display: -ms-flexbox;
