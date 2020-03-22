@@ -205,7 +205,10 @@ a {
 .subnavigation p {
   display: block;
   margin: 0;
-  padding: 10px 0px 12px 19px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 12px; 
+  padding-left: 19px;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -215,7 +218,10 @@ a {
 
 .subnavigation a {
   display: block;
-  padding: 9px 0px 6px 19px;
+  padding-top: 9px;
+  padding-right: 0px;
+  padding-bottom: 6px; 
+  padding-left: 19px;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -301,7 +307,8 @@ a {
 }
 
 .magnifier a {
-  padding: 7px 9px 7px 7px;
+  padding: 7px;
+  padding-right: 9px;
   border-radius: 50%;
 }
 
@@ -362,7 +369,7 @@ a {
 }
 
 .magnifier_field  input:hover {
-  border: 2px solid rgba(154,154,154,0.52);
+  border: 2px solid rgba(154, 154, 154, 0.52);
   padding: 14px;
   color: #323232;
 }
@@ -393,7 +400,7 @@ a {
 .login_button,
 .cart_button {
   position: relative;
-  padding-left: 44px;
+  padding-left: 45px;
 }
 
 .cart_button {
@@ -599,7 +606,6 @@ a {
   z-index: 1;
   display: none;
   margin: 0;
-  padding: 0;
   padding: 10px 15px;
   width: 540px;
   border-radius: 5px;
@@ -844,8 +850,8 @@ a {
 
 .slider_dots {
   position: absolute;
-  bottom: 24px;
-  left: -20px;
+  bottom: 23px;
+  left: -21px;
   z-index: 20;
   font-size: 0;
 }
@@ -1112,8 +1118,8 @@ a {
 .information_blog {
   display: block;
   width: 281px;
-  margin-left: 20px;
   margin-top: 4px;
+  margin-left: 20px;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -1263,7 +1269,6 @@ a {
   margin: 0;
   margin-top: 17px;
   padding: 0;
-
 }
 
 .map_legend strong {
@@ -1745,8 +1750,8 @@ a.bold_href {
 .min_price,
 .max_price {
   width: 60px;
-  margin-right: 6px;
   margin-top: -2px;
+  margin-right: 6px;
 }
 
 .price_controls::after {
@@ -2000,7 +2005,7 @@ a.bold_href {
   margin-right: 5px;
 }
 
-.pagination-item:last-of-type{
+.pagination-item:last-of-type {
   margin-left: 4px;
 }
 
@@ -2027,7 +2032,6 @@ a.bold_href {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 
 .seo_items li {
   position: relative;
