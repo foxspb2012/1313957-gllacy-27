@@ -788,7 +788,7 @@ a {
       justify-content: flex-end;
 }
 .with_breadcrumbs {
-  margin-top: 6px;
+  margin-top: -15px;
 }
 .schedule_phone a {
   font-size: 22px;
@@ -1202,6 +1202,7 @@ a {
 /* карта */
 .map {
   height: 430px;
+  width: 100%;
   margin: 0 -27px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1593,7 +1594,7 @@ a.bold_href {
 .breadcrumbs {
   font-weight: 400;
   margin: 1;
-  margin-top: 22px;
+  margin-top: 37px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
