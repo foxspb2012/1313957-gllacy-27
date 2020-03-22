@@ -1,13 +1,13 @@
 /* секция объявления переменных */ 
-var link = document.querySelector('.feedback_form_button');
-var mask = document.querySelector('.modal_dialog');
-var popup = document.querySelector('.modal_feedback');
-var close = popup.querySelector('.modal_close');
+var link = document.querySelector(".feedback_form_button");
+var mask = document.querySelector(".modal_dialog");
+var popup = document.querySelector(".modal_feedback");
+var close = popup.querySelector(".modal_close");
 
-var form = popup.querySelector('form');
-var name = popup.querySelector('[name=field_name]');
-var email = popup.querySelector('[name=field_email]');
-var message = popup.querySelector('[name=field_message]');
+var form = popup.querySelector("form");
+var name = popup.querySelector("[name=field_name]");
+var email = popup.querySelector("[name=field_email]");
+var message = popup.querySelector("[name=field_message]");
 
 var storageName = localStorage.getItem("name");
 var storageEmail = localStorage.getItem("email");

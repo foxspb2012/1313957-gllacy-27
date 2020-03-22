@@ -259,6 +259,10 @@ a {
   margin-right: 10px;
 }
 
+.user_navigation li:nth-child(2) {
+  margin-right: 9px;
+}
+
 .user_navigation > li:last-child {
   margin-right: 27px;
 }
@@ -794,7 +798,8 @@ a {
 
 .schedule_phone p {
   margin: 0;
-  margin-bottom: 8px;
+  margin-top: 3px;
+  margin-bottom: 6px;
   padding: 0;
   padding-left: 16px;
 }
@@ -806,7 +811,7 @@ a {
 }
 
 .breadcrumbs .schedule_phone {
-  margin-top: -8px;
+  margin-bottom: 7px;
 }
 
 /* стили блока слайдов*/
@@ -829,7 +834,7 @@ a {
 .slide_title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -889,7 +894,7 @@ a {
 }
 
 .slide_button {
-  padding: 12px 42px;
+  padding: 10px 42px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -969,7 +974,7 @@ a {
 
 .presents h3 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -999,7 +1004,7 @@ a {
 .presents .button {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-top: 44px;
+  margin-top: 45px;
   margin-bottom: 8px;
   padding: 11px 23px;
 }
@@ -1028,7 +1033,8 @@ a {
 .seo {
   min-height: 256px;
   margin: 0px;
-  padding-top: 26px;
+  margin-top:-2px;
+  padding-top: 25px;
   padding-right: 21px;
   padding-bottom: 23px;
   padding-left: 21px;
@@ -1043,6 +1049,7 @@ a {
 
 .seo_header {
   margin: 0;
+  margin-bottom: 2px;
   padding: 0;
   font-size: 24px;
   line-height: 30px;
@@ -1058,7 +1065,7 @@ a {
 /* Блог + Подписка на рассылку */
 .blogs_subscribe {
   padding: 0;
-  margin: 40px 0px;
+  margin: 39px 0px;
   min-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1186,8 +1193,8 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 17px;
-  margin-left: 9px;
+  padding: 11px 17px;
+  margin-left: 10px;
 }
 
 /* карта */
@@ -1232,14 +1239,14 @@ a {
   top: 63px;
   right: 27px;
   width: 302px;
-  padding-top: 29px;
+  padding-top: 28px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 15px;
   font-size: 14px;
   line-height: 20px;
   background-color: #ffffff;
-  z-index: 3;
+  z-index: 10;
 }
 
 .map_legend_address {
@@ -1265,9 +1272,10 @@ a {
 }
 
 .feedback_form_button {
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 31px;
   padding: 10px 27px;
+  padding-left: 28px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1584,7 +1592,7 @@ a.bold_href {
 .breadcrumbs {
   font-weight: 400;
   margin: 1;
-  margin-top: 28px;
+  margin-top: 22px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2111,9 +2119,9 @@ a.bold_href {
 }
 
 .fatness_level .filters_background {
-  padding: 10px;
+  padding: 9px;
   padding-right: 5px;
-  padding-left: 16px;
+  padding-left: 15px;
 }
 
 /* стили списка сливочного мороженого*/
@@ -2139,7 +2147,7 @@ a.bold_href {
   position: relative;
   width: 267px;
   min-height: 324px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2331,13 +2339,13 @@ a.bold_href {
 /*  анимация на JS */
 .show_modal {
   display: block;
-  -webkit-animation: bounce 0.8s;
-          animation: bounce 0.8s;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
 }
 
 .error_modal {
-  -webkit-animation: shake 0.8s;
-          animation: shake 0.8s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
 .visible {
