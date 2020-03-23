@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -182,8 +182,14 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="range_toggle range_toggle_min"></div>
-                    <div class="range_toggle range_toggle_max"></div>
+                    <div>
+                      <h3 class="visually-hidden">Флаг установки минимальной цены</h3>
+                      <div class="range_toggle range_toggle_min"></div>
+                    </div>
+                    <div>
+                      <h3 class="visually-hidden">Флаг установки максимальной цены</h3>
+                      <div class="range_toggle range_toggle_max"></div>
+                    </div>
                   </div>
                 </div>
               </fieldset>
