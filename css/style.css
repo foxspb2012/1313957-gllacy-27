@@ -133,17 +133,13 @@ a {
   margin: 0;
   margin-bottom: -3px;
   padding: 0;
-  width: 415px;
+  width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.site_navigation:first-child {
-  margin-left = 25px;
 }
 
 .navigation_item {
