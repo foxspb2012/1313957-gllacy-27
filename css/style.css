@@ -756,8 +756,8 @@ a {
 }
 
 .container h1 {
-  margin-top: 3px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 28px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -795,14 +795,6 @@ a {
     -ms-flex-pack: end;
       justify-content: flex-end;
 }
-.with_breadcrumbs {
-  margin-top: -7px;
-}
-
-.breadcrumbs {
-  margin: 0;
-  margin-top: 26px;
-}
 
 .schedule_phone a {
   font-size: 22px;
@@ -816,7 +808,7 @@ a {
   margin-top: 3px;
   margin-bottom: 6px;
   padding: 0;
-  padding-left: 16px;
+  padding-left: 17px;
 }
 
 
@@ -1294,7 +1286,7 @@ a {
 .feedback_form_button {
   margin-top: 24px;
   margin-bottom: 31px;
-  padding: 10px 27px;
+  padding: 10px 22px;
   padding-left: 28px;
   font-size: 18px;
   line-height: 24px;
@@ -1611,8 +1603,8 @@ a.bold_href {
 /* стили навигации внутренней страницы*/
 .breadcrumbs {
   font-weight: 400;
-  margin: 1;
-  margin-top: 37px;
+  margin: 0;
+  margin-top: 25px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2195,7 +2187,7 @@ a.bold_href {
 .price {
   position: absolute;
   margin: 0;
-  bottom: 65px;
+  bottom: 68px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
