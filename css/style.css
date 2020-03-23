@@ -106,6 +106,7 @@ a {
   margin-right: 10px;
   margin-left: 27px;
   width: 154px;
+  flex-shrink: 0;
 }
 
 .site_navigation,
